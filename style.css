@@ -361,3 +361,32 @@ body{
   .dash-title{font-size:.82rem}
   .prod-note{font-size:.9rem}
 }
+
+/* =========================================================================
+   PILOT SHAPE + FAQ
+   ========================================================================= */
+.pilot-shape{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.pilot-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2.4rem}
+.pilot-col{background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:1.7rem 1.5rem;display:flex;flex-direction:column}
+.pc-h{font-family:var(--mono);font-size:.76rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--green);margin-bottom:1.1rem;line-height:1.4}
+.pc-list{list-style:none;margin:0 0 1.1rem;padding:0;flex:1}
+.pc-list li{position:relative;padding-left:1.1rem;margin-bottom:.7rem;font-size:.95rem;color:var(--ink);line-height:1.55}
+.pc-list li::before{content:"";position:absolute;left:0;top:.6em;width:5px;height:5px;background:var(--gold);border-radius:1px}
+.pc-list em{font-family:var(--serif);font-style:italic}
+.pc-note{font-size:.88rem;color:var(--ink-soft);font-style:italic;border-top:1px solid var(--line);padding-top:.9rem;margin:0}
+.pilot-close{
+  margin-top:2rem;max-width:60ch;font-family:var(--serif);font-style:italic;
+  font-size:clamp(1.08rem,1.6vw,1.28rem);line-height:1.6;color:var(--ink);
+  border-left:3px solid var(--gold);padding-left:1.2rem;
+}
+
+.faq{background:var(--paper)}
+.faq-list{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem 3rem;margin-top:1.4rem}
+.faq-item{padding-top:1.2rem;border-top:1px solid var(--line)}
+.faq-item h3{font-family:var(--serif);font-weight:500;font-size:1.2rem;color:var(--ink);margin-bottom:.55rem;letter-spacing:-.01em;line-height:1.25}
+.faq-item p{font-size:.95rem;color:var(--ink-soft);line-height:1.62}
+
+@media (max-width:880px){
+  .pilot-grid{grid-template-columns:1fr;gap:1rem}
+  .faq-list{grid-template-columns:1fr;gap:1.6rem}
+}
