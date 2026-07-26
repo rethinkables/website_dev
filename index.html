@@ -1,307 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Rethinkables Technology — Fix a Broken Process. Pay Only When It Works.</title>
-<meta name="description" content="Rethinkables builds field software for the problems government officers are accountable for — at no upfront cost. You define the problem. We build and deploy the fix. You pay only once your officers adopt it." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rethinkables Technology | Zero-Risk GovTech Deployment</title>
+  <meta name="description" content="We bypass the traditional tender. Tell us what is failing on the ground. We build the instrument, deploy it in the field, and you pay only when it works." />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Open Graph Tags for Official WhatsApp Forwarding -->
+  <meta property="og:title" content="Rethinkables Technology | Risk-Free GovTech" />
+  <meta property="og:description" content="A new approach to state administration software. Zero upfront capital expenditure. Pay only on adoption." />
+  <meta property="og:type" content="website" />
 
-<link rel="stylesheet" href="style.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- Premium Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- DEFERRED SCRIPTS: Ensures instant text loading on field networks -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="field.js" defer></script>
+  <script src="main.js" defer></script>
 </head>
 <body>
 
-<!-- NAV -->
-<header class="nav" id="nav">
-<div class="container nav-inner">
-<a href="index.html" class="brand" aria-label="Rethinkables Technology — home">
-<svg class="brand-mark" width="32" height="32" viewBox="0 0 82 82" aria-hidden="true">
-<g stroke-linecap="square">
-<path d="M22 14 V70" stroke="#0A3F31" stroke-width="7.5"/>
-<path d="M22 14 H42" stroke="#0A3F31" stroke-width="7.5"/>
-<path d="M42 14 a14 14 0 0 1 0 28 H22" fill="none" stroke="#0A3F31" stroke-width="7.5"/>
-<path d="M41 42 L62 70" stroke="#B57E1F" stroke-width="7.5" stroke-linecap="round"/>
-</g>
-</svg>
-<span class="brand-word">Rethinkables<span class="brand-sub">TECHNOLOGY</span></span>
-</a>
-<nav class="nav-links" aria-label="Primary">
-<a href="#how">How it works</a>
-<a href="#protection">Why there's no risk</a>
-<a href="products.html">Products</a>
-<a href="#contact" class="nav-cta open-modal-btn">Start a no-risk pilot</a>
-</nav>
-</div>
-</header>
+  <!-- NAVIGATION -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand" aria-label="Rethinkables Technology">
+        <svg width="32" height="32" viewBox="0 0 82 82" aria-hidden="true">
+          <g stroke-linecap="square">
+            <path d="M22 14 V70" stroke="#0A3F31" stroke-width="7.5"/>
+            <path d="M22 14 H42" stroke="#0A3F31" stroke-width="7.5"/>
+            <path d="M42 14 a14 14 0 0 1 0 28 H22" fill="none" stroke="#0A3F31" stroke-width="7.5"/>
+            <path d="M41 42 L62 70" stroke="#B57E1F" stroke-width="7.5" stroke-linecap="round"/>
+          </g>
+        </svg>
+        <span class="brand-word">Rethinkables<span class="brand-sub">TECHNOLOGY</span></span>
+      </a>
+      <nav class="nav-links">
+        <button id="langToggle" class="lang-btn">हिंदी</button>
+        <a href="#model" class="nav-text" id="navApproach">The Approach</a>
+        <a href="products.html" class="nav-text" id="navInstrument">Our Instruments</a>
+        <button class="btn-solid open-modal-btn" id="navPilot">Initiate Requisition</button>
+      </nav>
+    </div>
+  </header>
 
-<!-- HERO -->
-<section class="hero" id="top">
-<canvas id="field" aria-hidden="true"></canvas>
-<div class="container hero-inner">
-<p class="kicker reveal">GovTech · Recognised by Startup India (DPIIT)</p>
-<h1 class="hero-h reveal">
-You are answerable for outcomes<br>
-<span class="serif-em">you cannot always see.</span>
-</h1>
-<p class="hero-sub reveal">
-Bring us a process that is failing on the ground — attendance that cannot be trusted,
-a scheme that leaks, a number that will not move. We design and build the instrument that
-fixes it, deploy it in the field, and carry the cost until it works. You pay a monthly
-subscription only once your officers have adopted it. If it is not used, you pay nothing.
-</p>
-<div class="hero-cta reveal">
-<button class="btn btn-solid open-modal-btn">Describe a problem you're accountable for</button>
-<a href="#how" class="btn btn-quiet">How it works</a>
-</div>
-<p class="hero-foot reveal">
-No upfront cost · You pay only on adoption · Zero risk to your department
-</p>
-</div>
-<span class="scroll-cue" aria-hidden="true">scroll</span>
-</section>
+  <!-- HERO SECTION (The Approach) -->
+  <section class="hero" id="top">
+    <!-- Neuro-optimized 3D network background -->
+    <div id="canvas-container"></div> 
+    
+    <div class="container hero-inner">
+      <p class="kicker">GovTech · Recognised by Startup India (DPIIT)</p>
+      <h1 class="hero-h reveal" id="heroTitle">
+        Fix the administrative gap.<br>
+        <span class="serif-em">Pay only when it works.</span>
+      </h1>
+      <p class="hero-sub reveal" id="heroSub">
+        We bypass the heavy capital expenditure of a 36-month tender. Bring us a process that is failing on the ground. We build the instrument, deploy it in the field, and you pay a predictable subscription only once your officers have adopted it.
+      </p>
+      <div class="hero-cta reveal">
+        <button class="btn-solid open-modal-btn" id="heroBtn">Requisition a District Pilot</button>
+        <a href="#model" class="btn-outline" id="heroSecBtn">Review Financial Model</a>
+      </div>
+    </div>
+  </section>
 
-<!-- HOW THE MODEL WORKS -->
-<section class="section how-model" id="how">
-<div class="container">
-<p class="eyebrow reveal">How we work with you</p>
-<h2 class="lead-h reveal">You define the problem. We carry the risk.</h2>
-<ol class="model-steps">
-<li class="mstep reveal">
-<span class="mstep-n">01</span>
-<h3>You bring the problem</h3>
-<p>The process your officers struggle with, the data you cannot verify, the leak you cannot locate. You know it better than anyone — you are accountable for it.</p>
-</li>
-<li class="mstep reveal">
-<span class="mstep-n">02</span>
-<h3>We build the instrument</h3>
-<p>We design and build software around how your department actually works — offline-first, for real field conditions, not a head-office ideal.</p>
-</li>
-<li class="mstep reveal">
-<span class="mstep-n">03</span>
-<h3>We deploy it — at our cost</h3>
-<p>We put it in the field and prove it. There is no upfront charge, no tender lock-in, no capital outlay from your department. The risk of building is ours.</p>
-</li>
-<li class="mstep reveal">
-<span class="mstep-n">04</span>
-<h3>You pay only on adoption</h3>
-<p>Once your officers are using it, you pay a predictable monthly subscription. If it is not adopted, you pay nothing. Your budget is never spent on something that did not work.</p>
-</li>
-</ol>
-</div>
-</section>
+  <!-- RISK REVERSAL MODULE -->
+  <section class="risk-reversal" id="model">
+    <div class="container">
+      <p class="eyebrow reveal" id="modelEyebrow">The Procurement Shift</p>
+      <h2 class="lead-h reveal" id="modelTitle">The burden of proof belongs to the vendor.</h2>
+      
+      <div class="risk-grid">
+        <div class="risk-card reveal">
+          <h3 id="cardOldTitle">The Traditional Tender</h3>
+          <p id="cardOldSub">High political and financial risk for the department.</p>
+          <ul class="check-list" id="cardOldList">
+            <li>Heavy upfront Capital Expenditure (CapEx).</li>
+            <li>Years locked into a rigid contract.</li>
+            <li>Department pays even if ground officers reject it.</li>
+            <li>Built for the head office, fails in rural offline zones.</li>
+          </ul>
+        </div>
+        <div class="risk-card rethink reveal">
+          <span class="badge" id="cardNewBadge">Our Approach</span>
+          <h3 id="cardNewTitle">Zero-Risk Subscription</h3>
+          <p id="cardNewSub">We carry the cost of deployment. You pay for outcomes.</p>
+          <ul class="check-list" id="cardNewList">
+            <li><strong>Zero Upfront Cost:</strong> No budget lock-in to initiate.</li>
+            <li><strong>Pay on Adoption:</strong> Monthly OpEx only when actively used.</li>
+            <li><strong>Zero Lock-in:</strong> Pause or scale based on district performance.</li>
+            <li><strong>Field-Proven:</strong> Offline-first architecture built for 3G zones.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- WHY THERE'S NO RISK (the whole sale, stated plainly) -->
-<section class="section protection" id="protection">
-<div class="container">
-<p class="eyebrow light reveal">Why there is no risk to you</p>
-<h2 class="lead-h ondark reveal">Four ways your department is protected.</h2>
-<div class="protect-grid">
-<div class="protect reveal">
-<h3>No budget risk</h3>
-<p>Nothing is paid upfront. No department funds are committed to software that has not yet proven itself in your own field conditions.</p>
-</div>
-<div class="protect reveal">
-<h3>No adoption risk</h3>
-<p>You pay only once officers are actually using the system. If it is not adopted on the ground, the cost to you is zero.</p>
-</div>
-<div class="protect reveal">
-<h3>No political risk</h3>
-<p>Our systems report the arithmetic — what the record shows. We measure; we do not accuse. The interpretation and the decision remain yours.</p>
-</div>
-<div class="protect reveal">
-<h3>No lock-in</h3>
-<p>A monthly subscription, not a multi-year capital commitment. You scale it, pause it, or stop it based on whether it is working for you.</p>
-</div>
-</div>
-</div>
-</section>
+  <!-- THE FIRST INSTRUMENT TEASER -->
+  <section class="section first-inst">
+    <div class="container">
+      <p class="eyebrow reveal" id="instEyebrow">Proof of Approach</p>
+      <div class="fi-grid">
+        <div class="fi-lead reveal">
+          <span class="fi-badge" id="instBadge">Built · Ready for deployment</span>
+          <h2 class="lead-h">EduAttend<span class="accent-dot">.AI</span></h2>
+          <p class="fi-body" id="instBody">
+            Verified student attendance and mid-day meal reconciliation for government schools. A daily, tamper-evident view of who was actually present—showing exactly where meal claims and attendance do not agree.
+          </p>
+          <a href="products.html" class="btn-solid" id="instBtn">Inspect the Instrument →</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- FIRST INSTRUMENT (EduAttend as proof, honestly labelled, links to full page) -->
-<section class="section first-inst" id="first">
-<div class="container">
-<p class="eyebrow reveal">Our first instrument</p>
-<div class="fi-grid">
-<div class="fi-lead reveal">
-<span class="fi-badge">Built · Ready for its first district pilot</span>
-<h2 class="lead-h">EduAttend<span class="accent-dot">.AI</span></h2>
-<p class="fi-body">
-Verified student attendance and mid-day meal reconciliation for government schools.
-It gives a district officer a daily, tamper-evident view of who was actually present —
-and shows exactly where meal claims and attendance do not agree.
-</p>
-<p class="fi-body">
-It is built and ready. It has not yet run in a school — we are looking for the first
-district willing to pilot it, at no cost. It is the proof of how we work: you would be
-the first officer to put it to the test, and you would risk nothing to do so.
-</p>
-<a href="products.html" class="btn btn-solid">See how EduAttend works →</a>
-</div>
-<div class="fi-side reveal">
-<div class="fi-stat"><span class="fis-k">Offline-first</span><span class="fis-v">Works where rural networks do not.</span></div>
-<div class="fi-stat"><span class="fis-k">Tamper-evident</span><span class="fis-v">Records cannot be edited or backdated.</span></div>
-<div class="fi-stat"><span class="fis-k">Consent-first</span><span class="fis-v">Built to comply with the DPDP Act, 2023.</span></div>
-<div class="fi-stat"><span class="fis-k">On-device</span><span class="fis-v">No images leave the phone — only a roll number and present or absent.</span></div>
-</div>
-</div>
-</div>
-</section>
+  <!-- REQUISITION MODAL -->
+  <div id="solutionModal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-card">
+      <button id="modalCloseBtn" class="modal-close" aria-label="Close">&times;</button>
+      <p class="eyebrow">Pilot Requisition</p>
+      <h3 class="modal-h" style="font-family: var(--font-serif); font-size: 2rem; margin-bottom: 1.5rem; color: var(--primary);">Define the administrative gap</h3>
+      
+      <form id="govForm">
+        <div class="form-group">
+          <label for="challenge_category">Department Allocation</label>
+          <select id="challenge_category" name="challenge_category" required>
+            <option value="">Select department</option>
+            <option value="School Education">School Education (e.g., EduAttend.AI)</option>
+            <option value="Rural Development">Rural Development / Panchayati Raj</option>
+            <option value="Other">Other (Specify below)</option>
+          </select>
+        </div>
+        <div class="form-group" id="other_sector_wrapper" style="display:none;">
+          <input type="text" id="other_sector_input" name="other_sector_input" placeholder="Specify department name" />
+        </div>
+        <div class="form-group">
+          <label for="problem">Ground Reality / Pain Point</label>
+          <textarea id="problem" name="problem" rows="3" required placeholder="Outline the tracking failure or unverifiable records in the field."></textarea>
+        </div>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="officer_name">Officer Name & Designation</label>
+            <input type="text" id="officer_name" name="officer_name" required placeholder="e.g. SDO / District Magistrate" />
+          </div>
+          <div class="form-group">
+            <label for="department">Office Jurisdiction</label>
+            <input type="text" id="department" name="department" required placeholder="e.g. Office of the DM" />
+          </div>
+        </div>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="division">State / District</label>
+            <input type="text" id="division" name="division" required placeholder="e.g. Lucknow, UP" />
+          </div>
+          <div class="form-group">
+            <label for="contact_info">Official Contact</label>
+            <input type="text" id="contact_info" name="contact_info" required placeholder="gov.in email or phone" />
+          </div>
+        </div>
+        <button type="submit" id="submitBtn" class="btn-solid btn-full">Submit Requisition to Rethinkables</button>
+      </form>
+    </div>
+  </div>
 
-<!-- WHERE THIS EXTENDS -->
-<section class="section extend" id="extend">
-<div class="container">
-<p class="eyebrow reveal">Where this extends</p>
-<h2 class="lead-h reveal">The same model, for any department that needs it.</h2>
-<p class="prose reveal" style="max-width:56ch;">
-EduAttend is the first instrument, not the last. Wherever officers are asked to act on
-what they cannot see — public works, rural schemes, health visits, distribution — the
-same offer holds: you define the problem, we build and carry the instrument, and you pay
-only when it works.
-</p>
-<div class="extend-row">
-<div class="ex-card reveal"><span class="ex-tag">On the roadmap</span><h3>Public works &amp; infrastructure</h3><p>Geo-tagged, tamper-evident records so field progress can be checked against what was reported.</p></div>
-<div class="ex-card reveal"><span class="ex-tag">On the roadmap</span><h3>Rural schemes &amp; distribution</h3><p>On-device verification that entitlements reached the people they were meant to reach.</p></div>
-<div class="ex-card reveal ex-invite"><span class="ex-tag gold">Your department</span><h3>The problem you're accountable for</h3><p>Not on this list? That is exactly the conversation to start. Describe it, and we will build for it.</p></div>
-</div>
-</div>
-</section>
-
-<!-- CREDIBILITY -->
-<section class="section credibility">
-<div class="container cred-inner">
-<p class="eyebrow reveal">Recognition &amp; compliance</p>
-<ul class="cred-list reveal">
-<li>Recognised by <strong>Startup India (DPIIT)</strong></li>
-<li>Registered with <strong>StartInUP</strong>, Government of Uttar Pradesh</li>
-<li>Mentored under <strong>iCreate</strong>, Gujarat</li>
-<li>Built to comply with the <strong>Digital Personal Data Protection Act, 2023</strong></li>
-</ul>
-</div>
-</section>
-
-<!-- PRINCIPLES -->
-<section class="section principles" id="principles">
-<div class="container">
-<p class="eyebrow light reveal">How we work</p>
-<div class="principle-list">
-<div class="principle reveal">
-<h3>We assist. We do not adjudicate.</h3>
-<p>The instrument reports what the record shows. The interpretation, and the decision, belong to the officer. We are the lens, never the judge.</p>
-</div>
-<div class="principle reveal">
-<h3>We report the arithmetic, not a verdict.</h3>
-<p>A claim of thirty-eight, a verified count of thirty-five, a difference of three. We present what is measured and let it speak. Drawing the conclusion is your prerogative.</p>
-</div>
-<div class="principle reveal">
-<h3>We hold ourselves to the same standard.</h3>
-<p>If a pilot fails to meet the benchmark agreed before it began, we will be the first to say so. An instrument that flatters its maker is of use to no one.</p>
-</div>
-</div>
-</div>
-</section>
-
-<!-- CONTACT -->
-<section class="section contact" id="contact">
-<div class="container contact-inner">
-<p class="eyebrow light reveal">Start a no-risk pilot</p>
-<h2 class="lead-h ondark reveal">You choose the problem. We carry the risk.</h2>
-<p class="contact-sub reveal">
-Tell us the process your officers are struggling with. We will design an instrument built
-around how your department actually works — and there is no cost to you until it is in use.
-</p>
-<button class="btn btn-gold open-modal-btn reveal">Describe a problem you're accountable for</button>
-<p class="contact-alt reveal">or write to us at <a href="mailto:contact@rethinkables.in">contact@rethinkables.in</a></p>
-</div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-<div class="container footer-inner">
-<div class="footer-brand">
-<svg width="26" height="26" viewBox="0 0 82 82" aria-hidden="true">
-<g stroke-linecap="square">
-<path d="M22 14 V70" stroke="#F4F1E8" stroke-width="7.5"/>
-<path d="M22 14 H42" stroke="#F4F1E8" stroke-width="7.5"/>
-<path d="M42 14 a14 14 0 0 1 0 28 H22" fill="none" stroke="#F4F1E8" stroke-width="7.5"/>
-<path d="M41 42 L62 70" stroke="#B57E1F" stroke-width="7.5" stroke-linecap="round"/>
-</g>
-</svg>
-<span>Rethinkables Technology Private Limited</span>
-</div>
-<p class="footer-meta">Registered in Uttar Pradesh, India · Recognised by Startup India (DPIIT)</p>
-</div>
-</footer>
-
-<!-- MODAL -->
-<div id="solutionModal" class="modal-overlay" aria-hidden="true">
-<div class="modal-card">
-<button id="modalCloseBtn" class="modal-close" aria-label="Close">&times;</button>
-<p class="eyebrow">Start a no-risk pilot</p>
-<h3 class="modal-h">Describe a problem you're accountable for</h3>
-<p class="modal-sub">
-You understand the problem on the ground better than anyone. Tell us what your officers are
-dealing with, and we will design an instrument built around how your department actually
-works — at no cost to you until it is in use.
-</p>
-
-<form id="govForm">
-<div class="form-group">
-<label for="challenge_category">Which department?</label>
-<select id="challenge_category" required>
-<option value="">Select department</option>
-<option value="School Education">School Education</option>
-<option value="Public Works">Public Works (PWD)</option>
-<option value="Rural Development / Panchayati Raj">Rural Development / Panchayati Raj</option>
-<option value="Health &amp; Family Welfare">Health &amp; Family Welfare</option>
-<option value="Food &amp; Civil Supplies">Food &amp; Civil Supplies</option>
-<option value="Social Welfare">Social Welfare</option>
-<option value="Women &amp; Child Development">Women &amp; Child Development</option>
-<option value="Revenue">Revenue</option>
-<option value="Other">Another department</option>
-</select>
-</div>
-
-<div class="form-group" id="other_sector_wrapper" style="display:none;">
-<label for="other_sector_input">Which department?</label>
-<input type="text" id="other_sector_input" placeholder="Name the department" />
-</div>
-
-<div class="form-group">
-<label for="problem">What breaks today?</label>
-<textarea id="problem" rows="3" required placeholder="Describe the conditions in the field, the tracking that fails, or the records that cannot be trusted."></textarea>
-</div>
-
-<div class="form-grid">
-<div class="form-group">
-<label for="officer_name">Your name &amp; designation</label>
-<input type="text" id="officer_name" required placeholder="e.g. District Magistrate" />
-</div>
-<div class="form-group">
-<label for="department">Office</label>
-<input type="text" id="department" required placeholder="e.g. Office of the DM" />
-</div>
-</div>
-
-<div class="form-grid">
-<div class="form-group">
-<label for="division">District / State / Country</label>
-<input type="text" id="division" required placeholder="e.g. Uttar Pradesh, India" />
-</div>
-<div class="form-group">
-<label for="contact_info">Email or phone</label>
-<input type="text" id="contact_info" required placeholder="officer@gov.in / +91..." />
-</div>
-</div>
-
-<button type="submit" id="submitBtn" class="btn btn-solid btn-full">Send to Rethinkables</button>
-</form>
-</div>
-</div>
-
-<script src="field.js"></script>
-<script src="main.js"></script>
 </body>
 </html>
