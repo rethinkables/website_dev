@@ -1,421 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rethinkables Technology — Instruments for Government</title>
-  <meta name="description" content="Rethinkables builds field instruments for government — offline-first software that lets officers see the ground truth for themselves. Verification, attendance, and reconciliation on ordinary smartphones." />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EduAttend.AI — Rethinkables Technology</title>
+<meta name="description" content="EduAttend.AI: verified attendance and mid-day meal reconciliation for government schools. Offline-first, tamper-evident, on ordinary smartphones. Built and ready for its first district pilot." />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- NAV -->
-  <header class="nav" id="nav">
-    <div class="container nav-inner">
-      <a href="#top" class="brand" aria-label="Rethinkables Technology — home">
-        <svg class="brand-mark" width="32" height="32" viewBox="0 0 82 82" aria-hidden="true">
-          <g stroke-linecap="square">
-            <path d="M22 14 V70" stroke="#0A3F31" stroke-width="7.5"/>
-            <path d="M22 14 H42" stroke="#0A3F31" stroke-width="7.5"/>
-            <path d="M42 14 a14 14 0 0 1 0 28 H22" fill="none" stroke="#0A3F31" stroke-width="7.5"/>
-            <path d="M41 42 L62 70" stroke="#B57E1F" stroke-width="7.5" stroke-linecap="round"/>
-          </g>
-        </svg>
-        <span class="brand-word">Rethinkables<span class="brand-sub">TECHNOLOGY</span></span>
-      </a>
-      <nav class="nav-links" aria-label="Primary">
-        <a href="#problem">The problem</a>
-        <a href="#work">What we build</a>
-        <a href="#how">How it works</a>
-        <a href="#principles">How we work</a>
-        <a href="#contact" class="nav-cta open-modal-btn">Start a conversation</a>
-      </nav>
-    </div>
-  </header>
+<!-- NAV -->
+<header class="nav scrolled" id="nav">
+<div class="container nav-inner">
+<a href="index.html" class="brand" aria-label="Rethinkables Technology — home">
+<svg class="brand-mark" width="32" height="32" viewBox="0 0 82 82" aria-hidden="true">
+<g stroke-linecap="square">
+<path d="M22 14 V70" stroke="#0A3F31" stroke-width="7.5"/>
+<path d="M22 14 H42" stroke="#0A3F31" stroke-width="7.5"/>
+<path d="M42 14 a14 14 0 0 1 0 28 H22" fill="none" stroke="#0A3F31" stroke-width="7.5"/>
+<path d="M41 42 L62 70" stroke="#B57E1F" stroke-width="7.5" stroke-linecap="round"/>
+</g>
+</svg>
+<span class="brand-word">Rethinkables<span class="brand-sub">TECHNOLOGY</span></span>
+</a>
+<nav class="nav-links" aria-label="Primary">
+<a href="index.html#how">How it works</a>
+<a href="index.html#protection">Why there's no risk</a>
+<a href="products.html" aria-current="page">Products</a>
+<a href="index.html#contact" class="nav-cta open-modal-btn">Start a no-risk pilot</a>
+</nav>
+</div>
+</header>
 
-  <!-- HERO -->
-  <section class="hero" id="top">
-    <canvas id="field" aria-hidden="true"></canvas>
-    <div class="container hero-inner">
-      <p class="kicker reveal">GovTech · Recognised by Startup India (DPIIT)</p>
-      <h1 class="hero-h reveal">
-        Instruments that let your officers see<br>
-        <span class="serif-em">the ground truth for themselves.</span>
-      </h1>
-      <p class="hero-sub reveal">
-        Every day, administrative data moves up from the field — attendance, service delivery,
-        distribution. Little of it can be independently checked once it arrives. Rethinkables builds
-        the instruments that close that distance: offline-first, on ordinary smartphones, with the
-        authority resting where it belongs — with your department.
-      </p>
-      <div class="hero-cta reveal">
-        <button class="btn btn-solid open-modal-btn">Describe your department's problem</button>
-        <a href="#how" class="btn btn-quiet">See how it works</a>
-      </div>
-      <p class="hero-foot reveal">
-        No upfront cost · Departments pay a monthly subscription once the system is in use
-      </p>
-    </div>
-    <span class="scroll-cue" aria-hidden="true">scroll</span>
-  </section>
+<!-- PRODUCT HERO -->
+<section class="section prod-hero">
+<div class="container">
+<a href="index.html" class="back-link reveal">← Rethinkables</a>
+<span class="fi-badge reveal">Built · Ready for its first district pilot</span>
+<h1 class="prod-h reveal">EduAttend<span class="accent-dot">.AI</span></h1>
+<p class="prod-lede reveal">
+Verified student attendance and mid-day meal reconciliation for government schools.
+It records not what a school types, but what a camera saw — on the device, offline,
+with the teacher's judgment always final.
+</p>
+<p class="prod-note reveal">
+A note in fairness: EduAttend is built and ready, but it has not yet run in a school.
+We are seeking the first district willing to pilot it — at no cost. If that is you, you
+would be the first officer to put it to the test, and you would risk nothing to do so.
+</p>
+</div>
+</section>
 
-  <!-- PROBLEM -->
-  <section class="section problem" id="problem">
-    <div class="container">
-      <p class="eyebrow reveal">The problem</p>
-      <h2 class="lead-h reveal">The distance between what is reported and what is real.</h2>
-      <div class="prose reveal">
-        <p>
-          In any large administration, information flows upward — and thins as it climbs. A figure
-          entered in a village register becomes a block total, becomes a district dashboard, becomes
-          a number on a screen in the capital. At each step, the ability to check it against reality
-          falls away. The number arrives. The ground truth does not.
-        </p>
-        <p>
-          This is not a failure of intent. It is a failure of instrument. Officers are asked to act
-          on data they have no practical means to verify — to sanction meals for children they cannot
-          confirm were present, to certify works they cannot revisit, to trust a presence no one
-          witnessed. The gap is not dishonesty. It is the absence of a tool.
-        </p>
-        <p class="prose-close">
-          We build the instruments that close that distance — and we leave the judgment where it
-          belongs.
-        </p>
-      </div>
-    </div>
-  </section>
+<!-- THE PROBLEM IT SOLVES -->
+<section class="section prod-problem">
+<div class="container">
+<p class="eyebrow reveal">What it solves</p>
+<h2 class="lead-h reveal">A reported number is not a verified number.</h2>
+<div class="prose reveal">
+<p>
+Attendance reaches state portals every day. Meal claims are filed and paid. But nothing
+establishes whether the figures match the children who were actually in the room — so the
+distance between what is claimed and what is real stays invisible.
+</p>
+<p>
+At the mid-day meal rate of ₹8.17 per child, sanctioned by the CCEA, an unverifiable
+attendance figure means an unverifiable nutrition claim. EduAttend closes that gap — not
+by accusing anyone, but by making the ground truth visible to the officer who is
+accountable for it.
+</p>
+</div>
+</div>
+</section>
 
-  <!-- WHAT WE BUILD -->
-  <section class="section work" id="work">
-    <div class="container">
-      <p class="eyebrow reveal">What we build</p>
-      <h2 class="lead-h reveal">Field instruments for public departments.</h2>
+<!-- HOW IT WORKS -->
+<section class="section how" id="how">
+<div class="container">
+<p class="eyebrow light reveal">How it works</p>
+<h2 class="lead-h ondark reveal">Four steps. Three minutes. Fully offline.</h2>
+<ol class="steps">
+<li class="step reveal">
+<span class="step-n">01</span>
+<h3>Capture</h3>
+<p>The teacher scans a code at the classroom. The rear camera sweeps the room and matches faces on the device itself. No internet is required.</p>
+</li>
+<li class="step reveal">
+<span class="step-n">02</span>
+<h3>Seal</h3>
+<p>Each record is fingerprinted on the device the moment it is taken. It cannot be edited or backdated afterward. Anyone unmatched starts absent; the teacher confirms with a tap.</p>
+</li>
+<li class="step reveal">
+<span class="step-n">03</span>
+<h3>Sync</h3>
+<p>When a network returns, records upload on their own to the district dashboard — nothing is lost, nothing is delayed.</p>
+</li>
+<li class="step reveal">
+<span class="step-n">04</span>
+<h3>See</h3>
+<p>The officer receives a clear daily view of who was present, and of exactly where meal claims and verified attendance do not agree.</p>
+</li>
+</ol>
 
-      <div class="work-grid">
-        <article class="work-card reveal">
-          <span class="wc-badge badge-live">Live · Pilot ready</span>
-          <h3 class="wc-title">EduAttend<span class="accent">.AI</span></h3>
-          <p class="wc-body">
-            Verified student attendance and mid-day meal reconciliation for government schools.
-            It gives a district officer a daily, tamper-evident view of who was present — and where
-            meal claims and attendance do not agree.
-          </p>
-          <button class="wc-link open-modal-btn">Request a district pilot →</button>
-        </article>
+<!-- SAMPLE DASHBOARD — clearly labelled as illustration -->
+<figure class="dash-sample reveal">
+<figcaption class="dash-cap">
+<span class="dash-tag">Illustration · sample figures</span>
+What the officer sees under “See” — a daily reconciliation view
+</figcaption>
+<div class="dash-frame">
+<div class="dash-head">
+<span class="dash-title">Mid-Day Meal Reconciliation</span>
+<span class="dash-date">Monday · Block sample</span>
+</div>
+<div class="dash-row dash-row-h">
+<span>Date</span><span>Claimed</span><span>Verified</span><span>Difference</span><span>Status</span>
+</div>
+<div class="dash-row">
+<span>22 Jul</span><span>38</span><span>38</span><span class="d-ok">0</span><span class="badge-ok">Matched</span>
+</div>
+<div class="dash-row d-flag">
+<span>21 Jul</span><span>38</span><span>33</span><span class="d-gap">5</span><span class="badge-gap">Discrepancy</span>
+</div>
+<div class="dash-row d-flag">
+<span>20 Jul</span><span>38</span><span>35</span><span class="d-gap">3</span><span class="badge-gap">Discrepancy</span>
+</div>
+<div class="dash-foot">
+The system reports the arithmetic only. No allegation is made against any person or school.
+</div>
+</div>
+</figure>
+</div>
+</section>
 
-        <article class="work-card reveal">
-          <span class="wc-badge badge-road">On the roadmap</span>
-          <h3 class="wc-title">FieldVerify</h3>
-          <p class="wc-body">
-            Geo-tagged, tamper-evident records for public works and rural infrastructure — so field
-            progress can be checked against what was reported, without a second site visit.
-          </p>
-          <button class="wc-link open-modal-btn">Register interest →</button>
-        </article>
+<!-- WHAT MAKES IT DIFFERENT -->
+<section class="section prod-diff">
+<div class="container">
+<p class="eyebrow reveal">What makes it different</p>
+<h2 class="lead-h reveal">Designed for the field, and for trust.</h2>
+<div class="diff-grid">
+<div class="diff reveal"><h3>Offline-first</h3><p>Works fully without internet and syncs when a network appears. Built for the schools where earlier systems failed, not for the head office.</p></div>
+<div class="diff reveal"><h3>Tamper-evident</h3><p>Every record is written once, hash-chained, and cannot be altered or backdated. The number the officer sees is the number that was taken.</p></div>
+<div class="diff reveal"><h3>On-device matching</h3><p>Faces are matched on the phone. Nothing leaves it but a roll number and present or absent — no images, no biometric data in transit.</p></div>
+<div class="diff reveal"><h3>Consent-first</h3><p>No child's face is enrolled without written parental consent, in compliance with the Digital Personal Data Protection Act, 2023.</p></div>
+<div class="diff reveal"><h3>Default absent</h3><p>Presence must be earned by a scan or an explicit tap. Nothing is marked present by doing nothing — the design that closes the fraud a paper register invites.</p></div>
+<div class="diff reveal"><h3>Teacher's judgment is final</h3><p>A support, not a monitor. There is no punitive mechanism. Honest work simply gains a record that can be trusted.</p></div>
+</div>
+</div>
+</section>
 
-        <article class="work-card reveal">
-          <span class="wc-badge badge-road">On the roadmap</span>
-          <h3 class="wc-title">BeneficiaryTrace</h3>
-          <p class="wc-body">
-            On-device presence verification for community health and public-works field staff, and
-            for the distribution of entitlements to the people they are meant to reach.
-          </p>
-          <button class="wc-link open-modal-btn">Register interest →</button>
-        </article>
-      </div>
-    </div>
-  </section>
+<!-- CTA -->
+<section class="section contact" id="contact">
+<div class="container contact-inner">
+<p class="eyebrow light reveal">Be the first district</p>
+<h2 class="lead-h ondark reveal">Pilot EduAttend at no cost.</h2>
+<p class="contact-sub reveal">
+It is built and ready. What it needs is one district willing to be the first to run it.
+There is no upfront cost, and you pay only if your officers adopt it.
+</p>
+<button class="btn btn-gold open-modal-btn reveal">Request a pilot for your district</button>
+<p class="contact-alt reveal">or write to us at <a href="mailto:contact@rethinkables.in">contact@rethinkables.in</a></p>
+</div>
+</section>
 
-  <!-- HOW IT WORKS -->
-  <section class="section how" id="how">
-    <div class="container">
-      <p class="eyebrow light reveal">How it works</p>
-      <h2 class="lead-h ondark reveal">Built offline-first, for the field.</h2>
-      <ol class="steps">
-        <li class="step reveal">
-          <span class="step-n">01</span>
-          <h3>Capture</h3>
-          <p>Field staff record attendance or verification on an ordinary smartphone. No internet is required at the point of capture.</p>
-        </li>
-        <li class="step reveal">
-          <span class="step-n">02</span>
-          <h3>Seal</h3>
-          <p>Each record is fingerprinted on the device the moment it is taken. It cannot be edited or backdated afterward.</p>
-        </li>
-        <li class="step reveal">
-          <span class="step-n">03</span>
-          <h3>Sync</h3>
-          <p>When a network returns, records upload on their own to the department's dashboard — nothing is lost, nothing is delayed.</p>
-        </li>
-        <li class="step reveal">
-          <span class="step-n">04</span>
-          <h3>See</h3>
-          <p>The officer receives a clear view of what happened on the ground, and of exactly where the record and reality diverge.</p>
-        </li>
-      </ol>
-    </div>
-  </section>
+<!-- FOOTER -->
+<footer class="footer">
+<div class="container footer-inner">
+<div class="footer-brand">
+<svg width="26" height="26" viewBox="0 0 82 82" aria-hidden="true">
+<g stroke-linecap="square">
+<path d="M22 14 V70" stroke="#F4F1E8" stroke-width="7.5"/>
+<path d="M22 14 H42" stroke="#F4F1E8" stroke-width="7.5"/>
+<path d="M42 14 a14 14 0 0 1 0 28 H22" fill="none" stroke="#F4F1E8" stroke-width="7.5"/>
+<path d="M41 42 L62 70" stroke="#B57E1F" stroke-width="7.5" stroke-linecap="round"/>
+</g>
+</svg>
+<span>Rethinkables Technology Private Limited</span>
+</div>
+<p class="footer-meta">Registered in Uttar Pradesh, India · Recognised by Startup India (DPIIT)</p>
+</div>
+</footer>
 
-  <!-- OUR DESIGN PHILOSOPHY -->
-  <section class="section philosophy" id="philosophy">
-    <div class="container">
-      <p class="eyebrow reveal">How we think about this</p>
-      <h2 class="lead-h reveal">Why we build the way we do.</h2>
-      
-      <div class="philosophy-grid">
-        <div class="philo-card reveal">
-          <h3>We design for adoption, not ideals.</h3>
-          <p>
-            Software fails in government not because the logic is wrong, but because it doesn't fit how 
-            people actually work. We build around field realities: connectivity, multitasking, resistance, fatigue. 
-            If officers don't adopt it, the design failed — not them.
-          </p>
-        </div>
+<!-- MODAL (same as home) -->
+<div id="solutionModal" class="modal-overlay" aria-hidden="true">
+<div class="modal-card">
+<button id="modalCloseBtn" class="modal-close" aria-label="Close">&times;</button>
+<p class="eyebrow">Start a no-risk pilot</p>
+<h3 class="modal-h">Request a pilot for your district</h3>
+<p class="modal-sub">
+Tell us about your district and we will arrange a pilot of EduAttend — at no cost, with
+no commitment until your officers have adopted it.
+</p>
 
-        <div class="philo-card reveal">
-          <h3>We report arithmetic, not verdicts.</h3>
-          <p>
-            Claimed 38 meals. Verified 35. Difference of 3. That's what you see. What you do with it 
-            is yours alone. We measure; we do not accuse. The interpretation belongs to the officer.
-          </p>
-        </div>
+<form id="govForm">
+<div class="form-group">
+<label for="challenge_category">Which department?</label>
+<select id="challenge_category" required>
+<option value="">Select department</option>
+<option value="School Education">School Education</option>
+<option value="Public Works">Public Works (PWD)</option>
+<option value="Rural Development / Panchayati Raj">Rural Development / Panchayati Raj</option>
+<option value="Health &amp; Family Welfare">Health &amp; Family Welfare</option>
+<option value="Food &amp; Civil Supplies">Food &amp; Civil Supplies</option>
+<option value="Social Welfare">Social Welfare</option>
+<option value="Women &amp; Child Development">Women &amp; Child Development</option>
+<option value="Revenue">Revenue</option>
+<option value="Other">Another department</option>
+</select>
+</div>
+<div class="form-group" id="other_sector_wrapper" style="display:none;">
+<label for="other_sector_input">Which department?</label>
+<input type="text" id="other_sector_input" placeholder="Name the department" />
+</div>
+<div class="form-group">
+<label for="problem">What breaks today?</label>
+<textarea id="problem" rows="3" required placeholder="Describe the conditions in the field, the tracking that fails, or the records that cannot be trusted."></textarea>
+</div>
+<div class="form-grid">
+<div class="form-group">
+<label for="officer_name">Your name &amp; designation</label>
+<input type="text" id="officer_name" required placeholder="e.g. District Magistrate" />
+</div>
+<div class="form-group">
+<label for="department">Office</label>
+<input type="text" id="department" required placeholder="e.g. Office of the DM" />
+</div>
+</div>
+<div class="form-grid">
+<div class="form-group">
+<label for="division">District / State / Country</label>
+<input type="text" id="division" required placeholder="e.g. Uttar Pradesh, India" />
+</div>
+<div class="form-group">
+<label for="contact_info">Email or phone</label>
+<input type="text" id="contact_info" required placeholder="officer@gov.in / +91..." />
+</div>
+</div>
+<button type="submit" id="submitBtn" class="btn btn-solid btn-full">Send to Rethinkables</button>
+</form>
+</div>
+</div>
 
-        <div class="philo-card reveal">
-          <h3>We stay silent about what we don't know.</h3>
-          <p>
-            We won't claim field experience we don't have. We won't promise metrics we haven't tested. 
-            We won't guess at your constraints. We learn by listening, by piloting, by failing small before asking you to scale.
-          </p>
-        </div>
-
-        <div class="philo-card reveal">
-          <h3>Risk is ours until it works.</h3>
-          <p>
-            You don't pay upfront. You don't commit capital. You don't take the reputational hit if we 
-            misunderstood your problem. We carry that. You pay only when your officers actually use it.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CREDIBILITY -->
-  <section class="section credibility">
-    <div class="container cred-inner">
-      <p class="eyebrow reveal">Recognition &amp; compliance</p>
-      <ul class="cred-list reveal">
-        <li>Recognised by <strong>Startup India (DPIIT)</strong></li>
-        <li>Registered with <strong>StartInUP</strong>, Government of Uttar Pradesh</li>
-        <li>Mentored under <strong>iCreate</strong>, Gujarat</li>
-        <li>Built to comply with the <strong>Digital Personal Data Protection Act, 2023</strong></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- PLATFORM VISION -->
-  <section class="section vision" id="vision">
-    <div class="container vision-inner">
-      <p class="eyebrow reveal">The wider picture</p>
-      <h2 class="lead-h reveal">One instrument today. The capability behind it endures.</h2>
-      <div class="prose reveal">
-        <p>
-          EduAttend is our first product. But the company is not a single product — it is the ability
-          to build a field instrument for any department that needs one. Wherever officers are asked
-          to work without sight of the ground — nutrition, rural works, health, distribution — the
-          same principle holds: you define the problem, we build the instrument, and the authority
-          stays with you.
-        </p>
-        <p class="prose-close">
-          The problem is universal to government everywhere. The instruments are built one department
-          at a time.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRINCIPLES -->
-  <section class="section principles" id="principles">
-    <div class="container">
-      <p class="eyebrow light reveal">How we work</p>
-      <div class="principle-list">
-        <div class="principle reveal">
-          <h3>We assist. We do not adjudicate.</h3>
-          <p>The instrument reports what the record shows. The interpretation, and the decision, belong to the officer. We are the lens, never the judge.</p>
-        </div>
-        <div class="principle reveal">
-          <h3>We report the arithmetic, not a verdict.</h3>
-          <p>A claim of thirty-eight, a verified count of thirty-five, a difference of three. We present what is measured and let it speak. Drawing the conclusion is your prerogative.</p>
-        </div>
-        <div class="principle reveal">
-          <h3>We hold ourselves to the same standard.</h3>
-          <p>If a pilot fails to meet the benchmark agreed before it began, we will be the first to say so. An instrument that flatters its maker is of use to no one.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="section contact" id="contact">
-    <div class="container contact-inner">
-      <p class="eyebrow light reveal">Start a conversation</p>
-      <h2 class="lead-h ondark reveal">You understand the ground better than anyone.</h2>
-      <p class="contact-sub reveal">
-        Tell us what your officers are dealing with. We will design an instrument built around how
-        your department actually works — and there is no cost until it is in use.
-      </p>
-      <button class="btn btn-gold open-modal-btn reveal">Describe your department's problem</button>
-      <p class="contact-alt reveal">or write to us at <a href="mailto:contact@rethinkables.in">contact@rethinkables.in</a></p>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <svg width="26" height="26" viewBox="0 0 82 82" aria-hidden="true">
-          <g stroke-linecap="square">
-            <path d="M22 14 V70" stroke="#F4F1E8" stroke-width="7.5"/>
-            <path d="M22 14 H42" stroke="#F4F1E8" stroke-width="7.5"/>
-            <path d="M42 14 a14 14 0 0 1 0 28 H22" fill="none" stroke="#F4F1E8" stroke-width="7.5"/>
-            <path d="M41 42 L62 70" stroke="#B57E1F" stroke-width="7.5" stroke-linecap="round"/>
-          </g>
-        </svg>
-        <span>Rethinkables Technology Private Limited</span>
-      </div>
-      <p class="footer-meta">Registered in Uttar Pradesh, India · Recognised by Startup India (DPIIT)</p>
-    </div>
-  </footer>
-
-  <!-- MODAL -->
-  <div id="solutionModal" class="modal-overlay" aria-hidden="true" role="dialog" aria-labelledby="modal-h">
-    <div class="modal-card">
-      <button id="modalCloseBtn" class="modal-close" aria-label="Close dialog">&times;</button>
-      
-      <p class="eyebrow">Start a conversation</p>
-      <h2 id="modal-h" class="modal-h">What's breaking in your department?</h2>
-      <p class="modal-sub">
-        You understand the ground better than anyone. Tell us what your officers are dealing with — 
-        the tracking that fails, the data you cannot verify, the problem you're accountable for. 
-        We'll listen and respond within a few working days.
-      </p>
-
-      <form id="govForm">
-        <!-- Department Selection -->
-        <div class="form-group">
-          <label for="challenge_category">Which department are you from?</label>
-          <select id="challenge_category" required>
-            <option value="">Select your department</option>
-            <option value="School Education">School Education</option>
-            <option value="Public Works">Public Works (PWD)</option>
-            <option value="Rural Development / Panchayati Raj">Rural Development / Panchayati Raj</option>
-            <option value="Health &amp; Family Welfare">Health &amp; Family Welfare</option>
-            <option value="Food &amp; Civil Supplies">Food &amp; Civil Supplies</option>
-            <option value="Social Welfare">Social Welfare</option>
-            <option value="Women &amp; Child Development">Women &amp; Child Development</option>
-            <option value="Revenue">Revenue</option>
-            <option value="Other">Another department</option>
-          </select>
-        </div>
-
-        <!-- Custom Department Input (hidden until "Other" is selected) -->
-        <div class="form-group" id="other_sector_wrapper" style="display:none;">
-          <label for="other_sector_input">Which department?</label>
-          <input 
-            type="text" 
-            id="other_sector_input" 
-            placeholder="Name the department" 
-            aria-describedby="other-help"
-          />
-          <small id="other-help" style="color: var(--ink-soft); font-size: 0.85rem; margin-top: 0.3rem; display: block;">
-            e.g., Disaster Management, Urban Development
-          </small>
-        </div>
-
-        <!-- Problem Description -->
-        <div class="form-group">
-          <label for="problem">What's the core issue?</label>
-          <textarea 
-            id="problem" 
-            rows="4" 
-            required 
-            placeholder="Be specific: What data can't you verify? Where do claims and reality diverge? What tracking fails on the ground?"
-            aria-describedby="problem-help"
-          ></textarea>
-          <small id="problem-help" style="color: var(--ink-soft); font-size: 0.85rem; margin-top: 0.3rem; display: block;">
-            The more specific you are, the better we can help.
-          </small>
-        </div>
-
-        <!-- Officer Details Grid -->
-        <div class="form-grid">
-          <div class="form-group">
-            <label for="officer_name">Your name &amp; designation</label>
-            <input 
-              type="text" 
-              id="officer_name" 
-              required 
-              placeholder="e.g. District Magistrate, Block Education Officer" 
-            />
-          </div>
-          <div class="form-group">
-            <label for="department">Your office</label>
-            <input 
-              type="text" 
-              id="department" 
-              required 
-              placeholder="e.g. Office of the DM, District School Office" 
-            />
-          </div>
-        </div>
-
-        <!-- Location & Contact Grid -->
-        <div class="form-grid">
-          <div class="form-group">
-            <label for="division">District / State</label>
-            <input 
-              type="text" 
-              id="division" 
-              required 
-              placeholder="e.g. Lucknow, Uttar Pradesh" 
-            />
-          </div>
-          <div class="form-group">
-            <label for="contact_info">Email or phone</label>
-            <input 
-              type="text" 
-              id="contact_info" 
-              required 
-              placeholder="officer@gov.in / +91..." 
-            />
-          </div>
-        </div>
-
-        <!-- Submit Button -->
-        <button type="submit" id="submitBtn" class="btn btn-solid btn-full">
-          Send to Rethinkables
-        </button>
-
-        <!-- Submission Note -->
-        <p style="
-          font-size: 0.82rem; 
-          color: var(--ink-soft); 
-          text-align: center; 
-          margin-top: 1rem;
-          line-height: 1.5;
-        ">
-          We read every message. You'll hear from us within a few working days.
-        </p>
-      </form>
-    </div>
-  </div>
-
-  <script src="field.js"></script>
-  <script src="main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
