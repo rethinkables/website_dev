@@ -8,7 +8,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Noto+Serif+Devanagari:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="alternate icon" href="favicon.ico" sizes="any">
@@ -39,10 +39,14 @@
         <span class="brand-word">Rethinkables<span class="brand-sub">TECHNOLOGY</span></span>
       </a>
       <nav class="nav-links" aria-label="Primary">
-        <a href="index.html#how">How it works</a>
-        <a href="index.html#protection">Why there's no risk</a>
-        <a href="products.html" aria-current="page">Products</a>
-        <a href="index.html#contact" class="nav-cta open-modal-btn">Start a no-risk pilot</a>
+        <a href="index.html#how" data-hi="कैसे काम करता है">How it works</a>
+        <a href="index.html#protection" data-hi="जोखिम क्यों नहीं">Why there's no risk</a>
+        <a href="products.html" aria-current="page" data-hi="उत्पाद">Products</a>
+        <a href="index.html#contact" class="nav-cta open-modal-btn" data-hi="निःशुल्क पायलट आरंभ करें">Start a no-risk pilot</a>
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn" data-lang="hi" aria-pressed="false">हिं</button>
+        </div>
       </nav>
     </div>
   </header>
@@ -50,15 +54,14 @@
   <!-- PRODUCT HERO -->
   <section class="section prod-hero">
     <div class="container">
-      <a href="index.html" class="back-link reveal">← Rethinkables</a>
-      <span class="fi-badge reveal">Built · Ready for its first district pilot</span>
-      <h1 class="prod-h reveal">EduAttend<span class="accent-dot">.AI</span></h1>
-      <p class="prod-lede reveal">
-        Verified student attendance and mid-day meal reconciliation for government schools.
-        It records not what a school types, but what a camera saw — on the device, offline,
-        with the teacher's judgment always final.
+      <a href="index.html" class="back-link reveal" data-hi="← Rethinkables">← Rethinkables</a>
+      <span class="fi-badge reveal" data-hi="तैयार · पहले जनपद पायलट के लिए प्रस्तुत">Built · Ready for its first district pilot</span>
+      <h1 class="prod-h reveal" data-hi="EduAttend<span class='accent-dot'>.AI</span>">EduAttend<span class="accent-dot">.AI</span></h1>
+      <p class="prod-lede reveal" data-hi="सरकारी विद्यालयों में सत्यापित उपस्थिति और मध्याह्न भोजन का मिलान। यह वह दर्ज नहीं करता जो लिखकर भेजा जाता है, बल्कि वह जो कैमरे ने देखा।">
+        Verified attendance and mid-day meal reconciliation for government schools.
+        It records not what a school types, but what a camera saw.
       </p>
-      <p class="prod-note reveal">
+      <p class="prod-note reveal" data-hi="स्पष्ट रूप से: EduAttend बनकर तैयार है, किंतु अभी तक किसी विद्यालय में नहीं चला है। हम पहले ऐसे जनपद की तलाश में हैं जो इसे बिना किसी अग्रिम लागत के आज़माना चाहे। यदि वह आप हैं, तो इसे परखने वाले पहले अधिकारी आप होंगे — और इसमें आपका कोई जोखिम नहीं।">
         A note in fairness: EduAttend is built and ready, but it has not yet run in a school.
         We are seeking the first district willing to pilot it — at no cost. If that is you, you
         would be the first officer to put it to the test, and you would risk nothing to do so.
@@ -69,15 +72,15 @@
   <!-- THE PROBLEM IT SOLVES -->
   <section class="section prod-problem">
     <div class="container">
-      <p class="eyebrow reveal">What it solves</p>
-      <h2 class="lead-h reveal">A reported number is not a verified number.</h2>
+      <p class="eyebrow reveal" data-hi="यह क्या हल करता है">What it solves</p>
+      <h2 class="lead-h reveal" data-hi="रिपोर्ट किया गया आँकड़ा, सत्यापित आँकड़ा नहीं होता।">A reported number is not a verified number.</h2>
       <div class="prose reveal">
-        <p>
+        <p data-hi="उपस्थिति प्रतिदिन राज्य पोर्टल तक पहुँचती है। भोजन के दावे प्रस्तुत होते हैं और भुगतान भी होता है। किंतु यह कोई सिद्ध नहीं करता कि ये आँकड़े उन बच्चों से मेल खाते हैं जो वास्तव में कक्षा में थे — इसलिए दावे और वास्तविकता के बीच की दूरी अदृश्य बनी रहती है।">
           Attendance reaches state portals every day. Meal claims are filed and paid. But nothing
           establishes whether the figures match the children who were actually in the room — so the
           distance between what is claimed and what is real stays invisible.
         </p>
-        <p>
+        <p data-hi="मध्याह्न भोजन की सीसीईए द्वारा स्वीकृत दर ₹8.17 प्रति बालक पर, एक असत्यापित उपस्थिति का अर्थ है एक असत्यापित पोषण दावा। EduAttend इस अंतर को पाटता है — किसी पर आरोप लगाकर नहीं, बल्कि उस अधिकारी को ज़मीनी सच्चाई दिखाकर जो इसके लिए उत्तरदायी है।">
           At the mid-day meal rate of ₹8.17 per child, sanctioned by the CCEA, an unverifiable
           attendance figure means an unverifiable nutrition claim. EduAttend closes that gap — not
           by accusing anyone, but by making the ground truth visible to the officer who is
@@ -90,58 +93,38 @@
   <!-- HOW IT WORKS -->
   <section class="section how" id="how">
     <div class="container">
-      <p class="eyebrow light reveal">How it works</p>
-      <h2 class="lead-h ondark reveal">Four steps. Three minutes. Fully offline.</h2>
+      <p class="eyebrow light reveal" data-hi="यह कैसे काम करता है">How it works</p>
+      <h2 class="lead-h ondark reveal" data-hi="चार चरण। तीन मिनट। पूरी तरह बिना इंटरनेट।">Four steps. Three minutes. Fully offline.</h2>
       <ol class="steps">
         <li class="step reveal">
           <span class="step-n">01</span>
-          <h3>Capture</h3>
-          <p>The teacher scans a code at the classroom. The rear camera sweeps the room and matches faces on the device itself. No internet is required.</p>
+          <h3 data-hi="दर्ज करना">Capture</h3>
+          <p data-hi="शिक्षक कक्षा के बाहर लगा कोड स्कैन करते हैं। पिछला कैमरा कक्षा पर घुमाया जाता है और चेहरे फ़ोन पर ही मिलाए जाते हैं। इंटरनेट की आवश्यकता नहीं।">The teacher scans a code at the classroom. The rear camera sweeps the room and matches faces on the device itself. No internet is required.</p>
         </li>
         <li class="step reveal">
           <span class="step-n">02</span>
-          <h3>Seal</h3>
-          <p>Each record is fingerprinted on the device the moment it is taken. It cannot be edited or backdated afterward. Anyone unmatched starts absent; the teacher confirms with a tap.</p>
+          <h3 data-hi="सुरक्षित करना">Seal</h3>
+          <p data-hi="प्रत्येक अभिलेख उसी क्षण फ़ोन पर चिह्नित हो जाता है। बाद में उसे न बदला जा सकता है, न पिछली तिथि में दर्ज किया जा सकता है। जिनका मिलान न हो वे अनुपस्थित माने जाते हैं; शिक्षक एक स्पर्श से पुष्टि करते हैं।">Each record is fingerprinted on the device the moment it is taken. It cannot be edited or backdated afterward. Anyone unmatched starts absent; the teacher confirms with a tap.</p>
         </li>
         <li class="step reveal">
           <span class="step-n">03</span>
-          <h3>Sync</h3>
-          <p>When a network returns, records upload on their own to the district dashboard — nothing is lost, nothing is delayed.</p>
+          <h3 data-hi="भेजना">Sync</h3>
+          <p data-hi="नेटवर्क आते ही अभिलेख स्वयं जनपद डैशबोर्ड पर पहुँच जाते हैं — कुछ खोता नहीं, कुछ रुकता नहीं।">When a network returns, records upload on their own to the district dashboard — nothing is lost, nothing is delayed.</p>
         </li>
         <li class="step reveal">
           <span class="step-n">04</span>
-          <h3>See</h3>
-          <p>The officer receives a clear daily view of who was present, and of exactly where meal claims and verified attendance do not agree.</p>
+          <h3 data-hi="देखना">See</h3>
+          <p data-hi="अधिकारी को प्रतिदिन स्पष्ट रूप से दिखता है कि कौन उपस्थित था, और ठीक कहाँ भोजन का दावा सत्यापित उपस्थिति से मेल नहीं खाता।">The officer receives a clear daily view of who was present, and of exactly where meal claims and verified attendance do not agree.</p>
         </li>
       </ol>
 
       <!-- SAMPLE DASHBOARD — clearly labelled as illustration -->
       <figure class="dash-sample reveal">
         <figcaption class="dash-cap">
-          <span class="dash-tag">Illustration · sample figures</span>
-          What the officer sees under “See” — a daily reconciliation view
+          <span class="dash-tag" data-hi="उदाहरण · नमूना आँकड़े">Illustration · sample figures</span>
+          <span data-hi="&quot;देखना&quot; चरण में अधिकारी को यही दिखता है">What the officer sees under “See”</span>
         </figcaption>
-        <div class="dash-frame">
-          <div class="dash-head">
-            <span class="dash-title">Mid-Day Meal Reconciliation</span>
-            <span class="dash-date">Monday · Block sample</span>
-          </div>
-          <div class="dash-row dash-row-h">
-            <span>Date</span><span>Claimed</span><span>Verified</span><span>Difference</span><span>Status</span>
-          </div>
-          <div class="dash-row">
-            <span>22 Jul</span><span>38</span><span>38</span><span class="d-ok">0</span><span class="badge-ok">Matched</span>
-          </div>
-          <div class="dash-row d-flag">
-            <span>21 Jul</span><span>38</span><span>33</span><span class="d-gap">5</span><span class="badge-gap">Discrepancy</span>
-          </div>
-          <div class="dash-row d-flag">
-            <span>20 Jul</span><span>38</span><span>35</span><span class="d-gap">3</span><span class="badge-gap">Discrepancy</span>
-          </div>
-          <div class="dash-foot">
-            The system reports the arithmetic only. No allegation is made against any person or school.
-          </div>
-        </div>
+        <img class="dash-img" src="dashboard.png" alt="District dashboard: schools reporting 18 of 20, 1,247 children verified, meal claim gap 63, three schools flagged, with a reconciliation table comparing claimed against verified attendance" width="1000" height="600" loading="lazy">
       </figure>
     </div>
   </section>
@@ -149,15 +132,15 @@
   <!-- WHAT MAKES IT DIFFERENT -->
   <section class="section prod-diff">
     <div class="container">
-      <p class="eyebrow reveal">What makes it different</p>
-      <h2 class="lead-h reveal">Designed for the field, and for trust.</h2>
+      <p class="eyebrow reveal" data-hi="यह भिन्न क्यों है">What makes it different</p>
+      <h2 class="lead-h reveal" data-hi="ज़मीन के लिए बना, और भरोसे के लिए।">Designed for the field, and for trust.</h2>
       <div class="diff-grid">
-        <div class="diff reveal"><h3>Offline-first</h3><p>Works fully without internet and syncs when a network appears. Built for the schools where earlier systems failed, not for the head office.</p></div>
-        <div class="diff reveal"><h3>Tamper-evident</h3><p>Every record is written once, hash-chained, and cannot be altered or backdated. The number the officer sees is the number that was taken.</p></div>
-        <div class="diff reveal"><h3>On-device matching</h3><p>Faces are matched on the phone. Nothing leaves it but a roll number and present or absent — no images, no biometric data in transit.</p></div>
-        <div class="diff reveal"><h3>Consent-first</h3><p>No child's face is enrolled without written parental consent, in compliance with the Digital Personal Data Protection Act, 2023.</p></div>
-        <div class="diff reveal"><h3>Default absent</h3><p>Presence must be earned by a scan or an explicit tap. Nothing is marked present by doing nothing — the design that closes the fraud a paper register invites.</p></div>
-        <div class="diff reveal"><h3>Teacher's judgment is final</h3><p>A support, not a monitor. There is no punitive mechanism. Honest work simply gains a record that can be trusted.</p></div>
+        <div class="diff reveal"><h3 data-hi="बिना इंटरनेट">Offline-first</h3><p data-hi="बिना इंटरनेट पूरी तरह काम करता है और नेटवर्क आते ही स्वयं भेज देता है। उन विद्यालयों के लिए बना है जहाँ पिछली व्यवस्थाएँ विफल रहीं, मुख्यालय के लिए नहीं।">Works fully without internet and syncs when a network appears. Built for the schools where earlier systems failed, not for the head office.</p></div>
+        <div class="diff reveal"><h3 data-hi="छेड़छाड़ रहित">Tamper-evident</h3><p data-hi="प्रत्येक अभिलेख एक ही बार लिखा जाता है, शृंखलाबद्ध रूप से सुरक्षित, और बाद में न बदला जा सकता है न पिछली तिथि में दर्ज। अधिकारी को वही आँकड़ा दिखता है जो लिया गया था।">Every record is written once, hash-chained, and cannot be altered or backdated. The number the officer sees is the number that was taken.</p></div>
+        <div class="diff reveal"><h3 data-hi="फ़ोन पर ही मिलान">On-device matching</h3><p data-hi="चेहरे फ़ोन पर ही मिलाए जाते हैं। केवल अनुक्रमांक और उपस्थित अथवा अनुपस्थित बाहर जाता है — न कोई चित्र, न कोई बायोमेट्रिक आँकड़ा।">Faces are matched on the phone. Nothing leaves it but a roll number and present or absent — no images, no biometric data in transit.</p></div>
+        <div class="diff reveal"><h3 data-hi="सहमति अनिवार्य">Consent-first</h3><p data-hi="किसी बालक का चेहरा अभिभावक की लिखित सहमति के बिना दर्ज नहीं किया जाता — डिजिटल पर्सनल डेटा प्रोटेक्शन अधिनियम, 2023 के अनुरूप।">No child's face is enrolled without written parental consent, in compliance with the Digital Personal Data Protection Act, 2023.</p></div>
+        <div class="diff reveal"><h3 data-hi="सामान्यतः अनुपस्थित">Default absent</h3><p data-hi="उपस्थिति स्कैन अथवा स्पष्ट स्पर्श से ही दर्ज होती है। कुछ न करने पर कोई उपस्थित नहीं माना जाता — यही वह रचना है जो कागज़ी रजिस्टर की गुंजाइश बंद करती है।">Presence must be earned by a scan or an explicit tap. Nothing is marked present by doing nothing — the design that closes the fraud a paper register invites.</p></div>
+        <div class="diff reveal"><h3 data-hi="शिक्षक का निर्णय अंतिम">Teacher's judgment is final</h3><p data-hi="यह सहायक है, निगरानी नहीं। कोई दंडात्मक प्रावधान नहीं। ईमानदार कार्य को बस एक ऐसा अभिलेख मिल जाता है जिस पर भरोसा किया जा सके।">A support, not a monitor. There is no punitive mechanism. Honest work simply gains a record that can be trusted.</p></div>
       </div>
     </div>
   </section>
@@ -165,38 +148,38 @@
   <!-- WHAT A PILOT LOOKS LIKE -->
   <section class="section pilot-shape" id="pilot">
     <div class="container">
-      <p class="eyebrow reveal">What a pilot actually involves</p>
-      <h2 class="lead-h reveal">Four weeks. Almost nothing asked of your staff.</h2>
+      <p class="eyebrow reveal" data-hi="पायलट में वास्तव में क्या होता है">What a pilot actually involves</p>
+      <h2 class="lead-h reveal" data-hi="चार सप्ताह। आपके कर्मचारियों से लगभग कुछ नहीं माँगा जाता।">Four weeks. Almost nothing asked of your staff.</h2>
       <div class="pilot-grid">
         <div class="pilot-col reveal">
-          <h3 class="pc-h">What your department provides</h3>
+          <h3 class="pc-h" data-hi="आपका विभाग क्या देता है">What your department provides</h3>
           <ul class="pc-list">
-            <li>Permission, and the schools you nominate</li>
-            <li>An introduction to the block office</li>
-            <li>One point of contact for questions</li>
+            <li data-hi="अनुमति, और वे विद्यालय जो आप नामित करें">Permission, and the schools you nominate</li>
+            <li data-hi="ब्लॉक कार्यालय से एक परिचय">An introduction to the block office</li>
+            <li data-hi="प्रश्नों के लिए एक संपर्क अधिकारी">One point of contact for questions</li>
           </ul>
-          <p class="pc-note">No budget line. No procurement process. No equipment purchase.</p>
+          <p class="pc-note" data-hi="कोई बजट मद नहीं। कोई क्रय प्रक्रिया नहीं। कोई उपकरण खरीद नहीं।">No budget line. No procurement process. No equipment purchase.</p>
         </div>
         <div class="pilot-col reveal">
-          <h3 class="pc-h">What we provide</h3>
+          <h3 class="pc-h" data-hi="हम क्या देते हैं">What we provide</h3>
           <ul class="pc-list">
-            <li>The software, the setup and the training</li>
-            <li>Field support for the duration</li>
-            <li>The dashboard, from day one</li>
+            <li data-hi="सॉफ़्टवेयर, स्थापना और प्रशिक्षण">The software, the setup and the training</li>
+            <li data-hi="पूरी अवधि तक क्षेत्रीय सहायता">Field support for the duration</li>
+            <li data-hi="पहले दिन से डैशबोर्ड">The dashboard, from day one</li>
           </ul>
-          <p class="pc-note">At our cost, for the full four weeks.</p>
+          <p class="pc-note" data-hi="पूरे चार सप्ताह, हमारे व्यय पर।">At our cost, for the full four weeks.</p>
         </div>
         <div class="pilot-col reveal">
-          <h3 class="pc-h">What you receive at the end</h3>
+          <h3 class="pc-h" data-hi="अंत में आपको क्या मिलता है">What you receive at the end</h3>
           <ul class="pc-list">
-            <li>Verified daily attendance for every pilot school</li>
-            <li>Meal claims reconciled against it</li>
-            <li>A written report against the benchmark agreed <em>before</em> the pilot began</li>
+            <li data-hi="प्रत्येक पायलट विद्यालय की सत्यापित दैनिक उपस्थिति">Verified daily attendance for every pilot school</li>
+            <li data-hi="उसके विरुद्ध मिलान किए गए भोजन दावे">Meal claims reconciled against it</li>
+            <li data-hi="उस मानक के विरुद्ध लिखित रिपोर्ट जो पायलट आरंभ होने से <em>पहले</em> तय हुआ था">A written report against the benchmark agreed <em>before</em> the pilot began</li>
           </ul>
-          <p class="pc-note">If it missed the benchmark, the report will say so.</p>
+          <p class="pc-note" data-hi="यदि मानक पूरा नहीं हुआ, तो रिपोर्ट यही कहेगी।">If it missed the benchmark, the report will say so.</p>
         </div>
       </div>
-      <p class="pilot-close reveal">
+      <p class="pilot-close reveal" data-hi="चार सप्ताह बाद निर्णय आपका। यदि यह काम कर गया, तो ₹99 प्रति सक्रिय शिक्षक प्रति माह पर जारी रहेगा। यदि नहीं, तो यहीं रुक जाएगा — और आपने कुछ भी व्यय नहीं किया होगा।">
         At the end of four weeks you decide. If it worked, it continues at ₹99 per active teacher
         per month. If it did not, it stops, and you have spent nothing.
       </p>
@@ -206,31 +189,31 @@
   <!-- FAQ -->
   <section class="section faq" id="faq">
     <div class="container">
-      <p class="eyebrow reveal">Questions officers ask</p>
+      <p class="eyebrow reveal" data-hi="अधिकारी जो प्रश्न पूछते हैं">Questions officers ask</p>
       <div class="faq-list">
         <div class="faq-item reveal">
-          <h3>Who owns the data?</h3>
-          <p>Your department. The records belong to the administration, not to us. We hold them to run the service and we hand them over in full on request — there is no lock-in through your own data.</p>
+          <h3 data-hi="आँकड़ों का स्वामी कौन?">Who owns the data?</h3>
+          <p data-hi="आपका विभाग। अभिलेख प्रशासन के हैं, हमारे नहीं। हम उन्हें केवल सेवा चलाने के लिए रखते हैं और माँगने पर पूरे सौंप देते हैं — आपके ही आँकड़ों के आधार पर कोई बंधन नहीं।">Your department. The records belong to the administration, not to us. We hold them to run the service and we hand them over in full on request — there is no lock-in through your own data.</p>
         </div>
         <div class="faq-item reveal">
-          <h3>What if there is no internet at the school?</h3>
-          <p>Nothing is lost. Everything is captured and stored on the phone itself, and uploads on its own when a network appears — that evening, the next day, or whenever the school next has signal.</p>
+          <h3 data-hi="यदि विद्यालय में इंटरनेट न हो?">What if there is no internet at the school?</h3>
+          <p data-hi="कुछ नहीं खोता। सब कुछ फ़ोन पर ही दर्ज और सुरक्षित रहता है, और नेटवर्क आते ही स्वयं भेज दिया जाता है — उसी शाम, अगले दिन, या जब भी विद्यालय में संकेत आए।">Nothing is lost. Everything is captured and stored on the phone itself, and uploads on its own when a network appears — that evening, the next day, or whenever the school next has signal.</p>
         </div>
         <div class="faq-item reveal">
-          <h3>Will teachers resist it?</h3>
-          <p>Some will, and we will not pretend otherwise. It is designed to reduce that: it records students rather than teachers, it takes about three minutes, there is no punitive mechanism, and the teacher's judgment is always final. But it is deployed by the district, not adopted school by school.</p>
+          <h3 data-hi="क्या शिक्षक विरोध करेंगे?">Will teachers resist it?</h3>
+          <p data-hi="कुछ करेंगे, और हम इससे इनकार नहीं करेंगे। रचना इसी को कम करने के लिए है: यह शिक्षकों की नहीं, छात्रों की उपस्थिति दर्ज करता है, इसमें लगभग तीन मिनट लगते हैं, कोई दंडात्मक प्रावधान नहीं है, और शिक्षक का निर्णय सदैव अंतिम है। किंतु इसे जनपद स्तर से लागू किया जाता है, विद्यालय-दर-विद्यालय स्वीकृति से नहीं।">Some will, and we will not pretend otherwise. It is designed to reduce that: it records students rather than teachers, it takes about three minutes, there is no punitive mechanism, and the teacher's judgment is always final. But it is deployed by the district, not adopted school by school.</p>
         </div>
         <div class="faq-item reveal">
-          <h3>Is this biometric surveillance?</h3>
-          <p>No. Faces are matched on the phone itself and never leave it — only a roll number and present-or-absent are transmitted. No child is enrolled without written parental consent, under the DPDP Act, 2023.</p>
+          <h3 data-hi="क्या यह बायोमेट्रिक निगरानी है?">Is this biometric surveillance?</h3>
+          <p data-hi="नहीं। चेहरे फ़ोन पर ही मिलाए जाते हैं और कभी बाहर नहीं जाते — केवल अनुक्रमांक और उपस्थित/अनुपस्थित भेजा जाता है। डीपीडीपी अधिनियम, 2023 के अंतर्गत किसी बालक को अभिभावक की लिखित सहमति के बिना दर्ज नहीं किया जाता।">No. Faces are matched on the phone itself and never leave it — only a roll number and present-or-absent are transmitted. No child is enrolled without written parental consent, under the DPDP Act, 2023.</p>
         </div>
         <div class="faq-item reveal">
-          <h3>What happens if the pilot fails?</h3>
-          <p>We report it ourselves, against the benchmark agreed beforehand, and it stops. You will have committed no budget and no procurement, so there is nothing to unwind.</p>
+          <h3 data-hi="यदि पायलट विफल हो जाए?">What happens if the pilot fails?</h3>
+          <p data-hi="हम स्वयं यह बताएँगे, उस मानक के विरुद्ध जो पहले तय हुआ था, और वहीं रोक देंगे। आपने न कोई बजट दिया होगा, न कोई क्रय किया होगा — इसलिए पलटने को कुछ नहीं होगा।">We report it ourselves, against the benchmark agreed beforehand, and it stops. You will have committed no budget and no procurement, so there is nothing to unwind.</p>
         </div>
         <div class="faq-item reveal">
-          <h3>Does this replace what we already use?</h3>
-          <p>No. It sits alongside existing reporting as a verification layer. Your current systems continue exactly as they are.</p>
+          <h3 data-hi="क्या यह वर्तमान व्यवस्था की जगह लेगा?">Does this replace what we already use?</h3>
+          <p data-hi="नहीं। यह वर्तमान रिपोर्टिंग के साथ एक सत्यापन परत के रूप में चलता है। आपकी मौजूदा व्यवस्थाएँ ज्यों की त्यों चलती रहेंगी।">No. It sits alongside existing reporting as a verification layer. Your current systems continue exactly as they are.</p>
         </div>
       </div>
     </div>
@@ -240,15 +223,15 @@
   <!-- CTA -->
   <section class="section contact" id="contact">
     <div class="container contact-inner">
-      <p class="eyebrow light reveal">Be the first district</p>
-      <h2 class="lead-h ondark reveal">Pilot EduAttend at no cost.</h2>
-      <p class="contact-sub reveal">
+      <p class="eyebrow light reveal" data-hi="पहला जनपद बनिए">Be the first district</p>
+      <h2 class="lead-h ondark reveal" data-hi="EduAttend बिना किसी लागत के आज़माइए।">Pilot EduAttend at no cost.</h2>
+      <p class="contact-sub reveal" data-hi="यह बनकर तैयार है। इसे बस एक ऐसे जनपद की आवश्यकता है जो इसे सबसे पहले चलाने को तैयार हो। कोई अग्रिम लागत नहीं। जब आपके शिक्षक इसका उपयोग करने लगें, तब ₹99 प्रति सक्रिय शिक्षक प्रति माह — और यदि इसे नहीं अपनाया गया, तो कोई शुल्क नहीं।">
         It is built and ready. What it needs is one district willing to be the first to run it.
         There is no upfront cost. Once your teachers are using it, it is ₹99 per active teacher
         per month — and if it is not adopted, you pay nothing.
       </p>
-      <button class="btn btn-gold open-modal-btn reveal">Request a pilot for your district</button>
-      <p class="contact-alt reveal">or write to us at <a href="mailto:contact@rethinkables.in">contact@rethinkables.in</a></p>
+      <button class="btn btn-gold open-modal-btn reveal" data-hi="अपने जनपद के लिए पायलट माँगें">Request a pilot for your district</button>
+      <p class="contact-alt reveal" data-hi="या हमें लिखिए <a href='mailto:contact@rethinkables.in'>contact@rethinkables.in</a>">or write to us at <a href="mailto:contact@rethinkables.in">contact@rethinkables.in</a></p>
     </div>
   </section>
 
@@ -266,7 +249,7 @@
         </svg>
         <span>Rethinkables Technology Private Limited</span>
       </div>
-      <p class="footer-meta">Registered in Uttar Pradesh, India · Recognised by Startup India (DPIIT)</p>
+      <p class="footer-meta" data-hi="उत्तर प्रदेश, भारत में पंजीकृत · स्टार्टअप इंडिया (DPIIT) से मान्यता प्राप्त">Registered in Uttar Pradesh, India · Recognised by Startup India (DPIIT)</p>
     </div>
   </footer>
 
@@ -274,16 +257,16 @@
   <div id="solutionModal" class="modal-overlay" aria-hidden="true">
     <div class="modal-card">
       <button id="modalCloseBtn" class="modal-close" aria-label="Close">&times;</button>
-      <p class="eyebrow">Start a no-risk pilot</p>
-      <h3 class="modal-h">Request a pilot for your district</h3>
-      <p class="modal-sub">
+      <p class="eyebrow" data-hi="निःशुल्क पायलट आरंभ करें">Start a no-risk pilot</p>
+      <h3 class="modal-h" data-hi="अपने जनपद के लिए पायलट माँगें">Request a pilot for your district</h3>
+      <p class="modal-sub" data-hi="अपने जनपद के विषय में बताइए और हम EduAttend का पायलट व्यवस्थित करेंगे — बिना किसी अग्रिम लागत के, और जब तक आपके अधिकारी इसे अपना न लें तब तक कोई प्रतिबद्धता नहीं।">
         Tell us about your district and we will arrange a pilot of EduAttend — at no cost, with
         no commitment until your officers have adopted it.
       </p>
 
       <form id="govForm">
         <div class="form-group">
-          <label for="challenge_category">Which department?</label>
+          <label for="challenge_category" data-hi="कौन सा विभाग?">Which department?</label>
           <select id="challenge_category" required>
             <option value="">Select department</option>
             <option value="School Education">School Education</option>
@@ -298,38 +281,39 @@
           </select>
         </div>
         <div class="form-group" id="other_sector_wrapper" style="display:none;">
-          <label for="other_sector_input">Which department?</label>
+          <label for="other_sector_input" data-hi="कौन सा विभाग?">Which department?</label>
           <input type="text" id="other_sector_input" placeholder="Name the department" />
         </div>
         <div class="form-group">
-          <label for="problem">What breaks today?</label>
+          <label for="problem" data-hi="आज क्या काम नहीं कर रहा?">What breaks today?</label>
           <textarea id="problem" rows="3" required placeholder="Describe the conditions in the field, the tracking that fails, or the records that cannot be trusted."></textarea>
         </div>
         <div class="form-grid">
           <div class="form-group">
-            <label for="officer_name">Your name &amp; designation</label>
+            <label for="officer_name" data-hi="आपका नाम एवं पदनाम">Your name &amp; designation</label>
             <input type="text" id="officer_name" required placeholder="e.g. District Magistrate" />
           </div>
           <div class="form-group">
-            <label for="department">Office</label>
+            <label for="department" data-hi="कार्यालय">Office</label>
             <input type="text" id="department" required placeholder="e.g. Office of the DM" />
           </div>
         </div>
         <div class="form-grid">
           <div class="form-group">
-            <label for="division">District / State / Country</label>
+            <label for="division" data-hi="जनपद / राज्य / देश">District / State / Country</label>
             <input type="text" id="division" required placeholder="e.g. Uttar Pradesh, India" />
           </div>
           <div class="form-group">
-            <label for="contact_info">Email or phone</label>
+            <label for="contact_info" data-hi="ईमेल अथवा दूरभाष">Email or phone</label>
             <input type="text" id="contact_info" required placeholder="officer@gov.in / +91..." />
           </div>
         </div>
-        <button type="submit" id="submitBtn" class="btn btn-solid btn-full">Send to Rethinkables</button>
+        <button type="submit" id="submitBtn" class="btn btn-solid btn-full" data-hi="Rethinkables को भेजें">Send to Rethinkables</button>
       </form>
     </div>
   </div>
 
   <script src="main.js"></script>
+  <script src="i18n.js"></script>
 </body>
 </html>
