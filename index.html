@@ -8,7 +8,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Noto+Serif+Devanagari:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="alternate icon" href="favicon.ico" sizes="any">
@@ -40,10 +40,14 @@
         <span class="brand-word">Rethinkables<span class="brand-sub">TECHNOLOGY</span></span>
       </a>
       <nav class="nav-links" aria-label="Primary">
-        <a href="#how">How it works</a>
-        <a href="#protection">Why there's no risk</a>
-        <a href="products.html">Products</a>
-        <a href="#contact" class="nav-cta open-modal-btn">Start a no-risk pilot</a>
+        <a href="#how" data-hi="कैसे काम करता है">How it works</a>
+        <a href="#protection" data-hi="जोखिम क्यों नहीं">Why there's no risk</a>
+        <a href="products.html" data-hi="उत्पाद">Products</a>
+        <a href="#contact" class="nav-cta open-modal-btn" data-hi="निःशुल्क पायलट शुरू करें">Start a no-risk pilot</a>
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn" data-lang="hi" aria-pressed="false">हिं</button>
+        </div>
       </nav>
     </div>
   </header>
@@ -52,22 +56,20 @@
   <section class="hero" id="top">
     <canvas id="field" aria-hidden="true"></canvas>
     <div class="container hero-inner">
-      <p class="kicker reveal">GovTech · Recognised by Startup India (DPIIT)</p>
-      <h1 class="hero-h reveal">
+      <p class="kicker reveal" data-hi="गवटेक · स्टार्टअप इंडिया (DPIIT) से मान्यता प्राप्त">GovTech · Recognised by Startup India (DPIIT)</p>
+      <h1 class="hero-h reveal" data-hi="जवाबदेही वहाँ तक जाती है,<br><span class='serif-em'>जहाँ तक निगरानी नहीं पहुँचती।</span>">
         Accountability reaches further<br>
         <span class="serif-em">than visibility.</span>
       </h1>
-      <p class="hero-sub reveal">
-        Bring us a process that is failing on the ground — attendance that cannot be trusted,
-        a scheme that leaks, a number that will not move. We design and build the instrument that
-        fixes it, deploy it in the field, and carry the cost until it works. You pay a monthly
-        subscription only once your officers have adopted it. If it is not used, you pay nothing.
+      <p class="hero-sub reveal" data-hi="अपने विभाग की वह प्रक्रिया बताइए जो ज़मीन पर विफल हो रही है। समाधान हम बनाते हैं, अपने व्यय पर लागू करते हैं, और शुल्क तभी जब आपके अधिकारी उसका उपयोग करने लगें।">
+        Bring us a process that is failing on the ground. We build the fix, deploy it at
+        our cost, and you pay only once your officers are using it.
       </p>
       <div class="hero-cta reveal">
-        <button class="btn btn-solid open-modal-btn">Describe a problem you're accountable for</button>
-        <a href="#how" class="btn btn-quiet">How it works</a>
+        <button class="btn btn-solid open-modal-btn" data-hi="अपने विभाग की समस्या बताइए">Describe a problem you're accountable for</button>
+        <a href="#how" class="btn btn-quiet" data-hi="यह कैसे काम करता है">How it works</a>
       </div>
-      <p class="hero-foot reveal">
+      <p class="hero-foot reveal" data-hi="कोई अग्रिम लागत नहीं · शुल्क केवल उपयोग शुरू होने पर · विभाग पर कोई जोखिम नहीं">
         No upfront cost · You pay only on adoption · Zero risk to your department
       </p>
     </div>
@@ -77,28 +79,28 @@
   <!-- HOW THE MODEL WORKS -->
   <section class="section how-model" id="how">
     <div class="container">
-      <p class="eyebrow reveal">How we work with you</p>
-      <h2 class="lead-h reveal">You define the problem. We carry the risk.</h2>
+      <p class="eyebrow reveal" data-hi="हम आपके साथ कैसे कार्य करते हैं">How we work with you</p>
+      <h2 class="lead-h reveal" data-hi="समस्या आप तय करें। जोखिम हम उठाएँगे।">You define the problem. We carry the risk.</h2>
       <ol class="model-steps">
         <li class="mstep reveal">
           <span class="mstep-n">01</span>
-          <h3>You bring the problem</h3>
-          <p>The process your officers struggle with, the data you cannot verify, the leak you cannot locate. You know it better than anyone — you are accountable for it.</p>
+          <h3 data-hi="समस्या आप बताइए">You bring the problem</h3>
+          <p data-hi="वह प्रक्रिया जो विफल है, वह आँकड़ा जिसे आप सत्यापित नहीं कर सकते। इसे आपसे बेहतर कोई नहीं जानता।">The process that fails, the data you cannot verify. You know it better than anyone.</p>
         </li>
         <li class="mstep reveal">
           <span class="mstep-n">02</span>
-          <h3>We build the instrument</h3>
-          <p>We design and build software around how your department actually works — offline-first, for real field conditions, not a head-office ideal.</p>
+          <h3 data-hi="समाधान हम बनाते हैं">We build the instrument</h3>
+          <p data-hi="सॉफ़्टवेयर आपके विभाग की वास्तविक कार्यप्रणाली के अनुसार — बिना इंटरनेट, ज़मीनी परिस्थितियों के लिए।">Software shaped around how your department actually works — offline-first, built for real field conditions.</p>
         </li>
         <li class="mstep reveal">
           <span class="mstep-n">03</span>
-          <h3>We deploy it — at our cost</h3>
-          <p>We put it in the field and prove it. There is no upfront charge, no tender lock-in, no capital outlay from your department. The risk of building is ours.</p>
+          <h3 data-hi="लागू भी हम करते हैं — अपने व्यय पर">We deploy it — at our cost</h3>
+          <p data-hi="कोई अग्रिम शुल्क नहीं। कोई टेंडर नहीं। कोई पूँजीगत व्यय नहीं। निर्माण का जोखिम हमारा।">No upfront charge. No tender. No capital outlay. The risk of building is ours.</p>
         </li>
         <li class="mstep reveal">
           <span class="mstep-n">04</span>
-          <h3>You pay only on adoption</h3>
-          <p>Once your officers are using it, you pay a predictable monthly subscription. If it is not adopted, you pay nothing. Your budget is never spent on something that did not work.</p>
+          <h3 data-hi="शुल्क केवल उपयोग शुरू होने पर">You pay only on adoption</h3>
+          <p data-hi="अधिकारी उपयोग करने लगें, तब मासिक शुल्क। नहीं अपनाया गया? कोई शुल्क नहीं।">A monthly subscription once officers are using it. Not adopted? You pay nothing.</p>
         </li>
       </ol>
     </div>
@@ -107,24 +109,28 @@
   <!-- WHY THERE'S NO RISK (the whole sale, stated plainly) -->
   <section class="section protection" id="protection">
     <div class="container">
-      <p class="eyebrow light reveal">Why there is no risk to you</p>
-      <h2 class="lead-h ondark reveal">Four ways your department is protected.</h2>
+      <p class="eyebrow light reveal" data-hi="आप पर कोई जोखिम क्यों नहीं">Why there is no risk to you</p>
+      <h2 class="lead-h ondark reveal" data-hi="आपका विभाग चार प्रकार से सुरक्षित है।">Four ways your department is protected.</h2>
       <div class="protect-grid">
         <div class="protect reveal">
-          <h3>No budget risk</h3>
-          <p>Nothing is paid upfront. No department funds are committed to software that has not yet proven itself in your own field conditions.</p>
+          <span class="p-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 7h18v12H3z"/><path d="M3 11h18"/><path d="M7 15h4"/></svg></span>
+          <h3 data-hi="बजट का जोखिम नहीं">No budget risk</h3>
+          <p data-hi="कुछ भी अग्रिम नहीं। सिद्ध होने से पहले विभाग का धन नहीं लगता।">Nothing paid upfront. No department funds committed before it proves itself.</p>
         </div>
         <div class="protect reveal">
-          <h3>No adoption risk</h3>
-          <p>You pay only once officers are actually using the system. If it is not adopted on the ground, the cost to you is zero.</p>
+          <span class="p-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20 7L10 17l-5-5"/></svg></span>
+          <h3 data-hi="उपयोग का जोखिम नहीं">No adoption risk</h3>
+          <p data-hi="शुल्क तभी जब अधिकारी उपयोग करें। ज़मीन पर नहीं अपनाया गया? लागत शून्य।">Pay only once officers use it. Not adopted on the ground? Zero cost.</p>
         </div>
         <div class="protect reveal">
-          <h3>No political risk</h3>
-          <p>Our systems report the arithmetic — what the record shows. We measure; we do not accuse. The interpretation and the decision remain yours.</p>
+          <span class="p-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 3l8 4v5c0 5-3.4 8-8 9-4.6-1-8-4-8-9V7z"/></svg></span>
+          <h3 data-hi="प्रशासनिक जोखिम नहीं">No political risk</h3>
+          <p data-hi="हम गणना बताते हैं, फ़ैसला नहीं। विवेचना आपकी ही रहती है।">We report arithmetic, not verdicts. The interpretation stays yours.</p>
         </div>
         <div class="protect reveal">
-          <h3>No lock-in</h3>
-          <p>A monthly subscription, not a multi-year capital commitment. You scale it, pause it, or stop it based on whether it is working for you.</p>
+          <span class="p-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M5 12h14"/><path d="M14 7l5 5-5 5"/></svg></span>
+          <h3 data-hi="कोई बंधन नहीं">No lock-in</h3>
+          <p data-hi="मासिक शुल्क। बढ़ाइए, रोकिए या बंद कीजिए।">A monthly subscription. Scale it, pause it, or stop it.</p>
         </div>
       </div>
     </div>
@@ -133,29 +139,26 @@
   <!-- FIRST INSTRUMENT (EduAttend as proof, honestly labelled, links to full page) -->
   <section class="section first-inst" id="first">
     <div class="container">
-      <p class="eyebrow reveal">Our first instrument</p>
+      <p class="eyebrow reveal" data-hi="हमारा पहला समाधान">Our first instrument</p>
       <div class="fi-grid">
         <div class="fi-lead reveal">
-          <span class="fi-badge">Built · Ready for its first district pilot</span>
-          <h2 class="lead-h">EduAttend<span class="accent-dot">.AI</span></h2>
-          <p class="fi-body">
-            Verified student attendance and mid-day meal reconciliation for government schools.
-            It gives a district officer a daily, tamper-evident view of who was actually present —
-            and shows exactly where meal claims and attendance do not agree.
+          <span class="fi-badge" data-hi="तैयार · पहले जनपद पायलट के लिए प्रस्तुत">Built · Ready for its first district pilot</span>
+          <h2 class="lead-h" data-hi="EduAttend<span class='accent-dot'>.AI</span>">EduAttend<span class="accent-dot">.AI</span></h2>
+          <p class="fi-body" data-hi="सरकारी विद्यालयों में सत्यापित छात्र उपस्थिति और मध्याह्न भोजन का मिलान। अधिकारी को प्रतिदिन दिखता है कि वास्तव में कौन उपस्थित था — और कहाँ भोजन का दावा मेल नहीं खाता।">
+            Verified student attendance and mid-day meal reconciliation for government schools —
+            a daily, tamper-evident view of who was actually present, and where meal claims do not agree.
           </p>
-          <p class="fi-body">
-            It is built and ready. It has not yet run in a school — we are looking for the first
-            district willing to pilot it, at no upfront cost. Once your teachers are using it, it is
-            ₹99 per active teacher per month — and if it is not adopted, you pay nothing.
+          <p class="fi-body" data-hi="यह तैयार है, किंतु अभी किसी विद्यालय में नहीं चला। हम पहले जनपद की तलाश में हैं — बिना अग्रिम लागत। उपयोग शुरू होने पर ₹99 प्रति सक्रिय शिक्षक प्रति माह।">
+            Built and ready — but it has not yet run in a school. We are looking for the first
+            district to pilot it, at no upfront cost. Then ₹99 per active teacher per month.
           </p>
-          <a href="products.html" class="btn btn-solid">See how EduAttend works →</a>
+          <a href="products.html" class="btn btn-solid" data-hi="EduAttend कैसे काम करता है →">See how EduAttend works →</a>
         </div>
-        <div class="fi-side reveal">
-          <div class="fi-stat"><span class="fis-k">Offline-first</span><span class="fis-v">Works where rural networks do not.</span></div>
-          <div class="fi-stat"><span class="fis-k">Tamper-evident</span><span class="fis-v">Records cannot be edited or backdated.</span></div>
-          <div class="fi-stat"><span class="fis-k">Consent-first</span><span class="fis-v">Built to comply with the DPDP Act, 2023.</span></div>
-          <div class="fi-stat"><span class="fis-k">On-device</span><span class="fis-v">No images leave the phone — only a roll number and present or absent.</span></div>
-        </div>
+        <figure class="fi-shot reveal">
+          <img src="phone-app.png" alt="EduAttend attendance screen on a phone: Class 5-A, 35 of 38 recognised, students marked present or absent" width="420" height="850" loading="lazy">
+          <figcaption data-hi="उदाहरण · शिक्षक की स्क्रीन">Illustration · the teacher's screen</figcaption>
+        </figure>
+      </div>
       </div>
     </div>
   </section>
@@ -163,18 +166,18 @@
   <!-- WHERE THIS EXTENDS -->
   <section class="section extend" id="extend">
     <div class="container">
-      <p class="eyebrow reveal">Where this extends</p>
-      <h2 class="lead-h reveal">The same model, for any department that needs it.</h2>
-      <p class="prose reveal" style="max-width:56ch;">
+      <p class="eyebrow reveal" data-hi="यह आगे कहाँ तक">Where this extends</p>
+      <h2 class="lead-h reveal" data-hi="यही व्यवस्था, हर उस विभाग के लिए जिसे इसकी आवश्यकता हो।">The same model, for any department that needs it.</h2>
+      <p class="prose reveal" style="max-width:56ch;" data-hi="EduAttend पहला समाधान है, अंतिम नहीं। जहाँ भी अधिकारियों को ऐसी बातों पर निर्णय लेना पड़ता है जो उन्हें दिखाई नहीं देतीं — लोक निर्माण, ग्रामीण योजनाएँ, स्वास्थ्य भ्रमण, वितरण — वही प्रस्ताव लागू है: समस्या आप तय करें, समाधान हम बनाएँ और उठाएँ, और शुल्क तभी जब वह काम करे।">
         EduAttend is the first instrument, not the last. Wherever officers are asked to act on
         what they cannot see — public works, rural schemes, health visits, distribution — the
         same offer holds: you define the problem, we build and carry the instrument, and you pay
         only when it works.
       </p>
       <div class="extend-row">
-        <div class="ex-card reveal"><span class="ex-tag">On the roadmap</span><h3>Public works &amp; infrastructure</h3><p>Geo-tagged, tamper-evident records so field progress can be checked against what was reported.</p></div>
-        <div class="ex-card reveal"><span class="ex-tag">On the roadmap</span><h3>Rural schemes &amp; distribution</h3><p>On-device verification that entitlements reached the people they were meant to reach.</p></div>
-        <div class="ex-card reveal ex-invite"><span class="ex-tag gold">Your department</span><h3>The problem you're accountable for</h3><p>Not on this list? That is exactly the conversation to start. Describe it, and we will build for it.</p></div>
+        <div class="ex-card reveal"><span class="ex-tag" data-hi="प्रस्तावित">On the roadmap</span><h3 data-hi="लोक निर्माण एवं अवसंरचना">Public works &amp; infrastructure</h3><p data-hi="जियो-टैग युक्त, छेड़छाड़ रहित अभिलेख — ताकि क्षेत्र की वास्तविक प्रगति रिपोर्ट से मिलाई जा सके।">Geo-tagged, tamper-evident records so field progress can be checked against what was reported.</p></div>
+        <div class="ex-card reveal"><span class="ex-tag" data-hi="प्रस्तावित">On the roadmap</span><h3 data-hi="ग्रामीण योजनाएँ एवं वितरण">Rural schemes &amp; distribution</h3><p data-hi="फ़ोन पर ही सत्यापन कि लाभ उन्हीं तक पहुँचा जिनके लिए वह था।">On-device verification that entitlements reached the people they were meant to reach.</p></div>
+        <div class="ex-card reveal ex-invite"><span class="ex-tag gold" data-hi="आपका विभाग">Your department</span><h3 data-hi="वह समस्या जिसके लिए आप उत्तरदायी हैं">The problem you're accountable for</h3><p data-hi="इस सूची में नहीं है? यही बातचीत आरंभ करने का सही विषय है। बताइए, हम उसी के लिए बनाएँगे।">Not on this list? That is exactly the conversation to start. Describe it, and we will build for it.</p></div>
       </div>
     </div>
   </section>
@@ -183,12 +186,12 @@
   <!-- CREDIBILITY -->
   <section class="section credibility">
     <div class="container cred-inner">
-      <p class="eyebrow reveal">Recognition &amp; compliance</p>
+      <p class="eyebrow reveal" data-hi="मान्यता एवं अनुपालन">Recognition &amp; compliance</p>
       <ul class="cred-list reveal">
-        <li>Recognised by <strong>Startup India (DPIIT)</strong></li>
-        <li>Registered with <strong>StartInUP</strong>, Government of Uttar Pradesh</li>
-        <li>Mentored under <strong>iCreate</strong>, Gujarat</li>
-        <li>Built to comply with the <strong>Digital Personal Data Protection Act, 2023</strong></li>
+        <li data-hi="<strong>स्टार्टअप इंडिया (DPIIT)</strong> द्वारा मान्यता प्राप्त">Recognised by <strong>Startup India (DPIIT)</strong></li>
+        <li data-hi="<strong>StartInUP</strong>, उत्तर प्रदेश सरकार में पंजीकृत">Registered with <strong>StartInUP</strong>, Government of Uttar Pradesh</li>
+        <li data-hi="<strong>iCreate</strong>, गुजरात द्वारा मार्गदर्शित">Mentored under <strong>iCreate</strong>, Gujarat</li>
+        <li data-hi="<strong>डिजिटल पर्सनल डेटा प्रोटेक्शन अधिनियम, 2023</strong> के अनुरूप निर्मित">Built to comply with the <strong>Digital Personal Data Protection Act, 2023</strong></li>
       </ul>
     </div>
   </section>
@@ -196,19 +199,19 @@
   <!-- PRINCIPLES -->
   <section class="section principles" id="principles">
     <div class="container">
-      <p class="eyebrow light reveal">How we work</p>
+      <p class="eyebrow light reveal" data-hi="हमारी कार्यपद्धति">How we work</p>
       <div class="principle-list">
         <div class="principle reveal">
-          <h3>We assist. We do not adjudicate.</h3>
-          <p>The instrument reports what the record shows. The interpretation, and the decision, belong to the officer. We are the lens, never the judge.</p>
+          <h3 data-hi="हम सहायता करते हैं, निर्णय नहीं।">We assist. We do not adjudicate.</h3>
+          <p data-hi="यह व्यवस्था केवल वही बताती है जो अभिलेख में दर्ज है। विवेचना और निर्णय अधिकारी का है। हम दृष्टि देते हैं, निर्णय नहीं।">The instrument reports what the record shows. The interpretation, and the decision, belong to the officer. We are the lens, never the judge.</p>
         </div>
         <div class="principle reveal">
-          <h3>We report the arithmetic, not a verdict.</h3>
-          <p>A claim of thirty-eight, a verified count of thirty-five, a difference of three. We present what is measured and let it speak. Drawing the conclusion is your prerogative.</p>
+          <h3 data-hi="हम गणना बताते हैं, फ़ैसला नहीं।">We report the arithmetic, not a verdict.</h3>
+          <p data-hi="दावा अड़तीस, सत्यापित पैंतीस, अंतर तीन। हम जो मापा गया वही प्रस्तुत करते हैं। निष्कर्ष निकालना आपका अधिकार है।">A claim of thirty-eight, a verified count of thirty-five, a difference of three. We present what is measured and let it speak. Drawing the conclusion is your prerogative.</p>
         </div>
         <div class="principle reveal">
-          <h3>We hold ourselves to the same standard.</h3>
-          <p>If a pilot fails to meet the benchmark agreed before it began, we will be the first to say so. An instrument that flatters its maker is of use to no one.</p>
+          <h3 data-hi="यही मानक हम पर भी लागू है।">We hold ourselves to the same standard.</h3>
+          <p data-hi="यदि पायलट उस मानक तक नहीं पहुँचता जो आरंभ से पहले तय हुआ था, तो सबसे पहले हम स्वयं यह बताएँगे। जो व्यवस्था अपने ही निर्माता की प्रशंसा करे, वह किसी के काम की नहीं।">If a pilot fails to meet the benchmark agreed before it began, we will be the first to say so. An instrument that flatters its maker is of use to no one.</p>
         </div>
       </div>
     </div>
@@ -217,14 +220,14 @@
   <!-- CONTACT -->
   <section class="section contact" id="contact">
     <div class="container contact-inner">
-      <p class="eyebrow light reveal">Start a no-risk pilot</p>
-      <h2 class="lead-h ondark reveal">You choose the problem. We carry the risk.</h2>
-      <p class="contact-sub reveal">
+      <p class="eyebrow light reveal" data-hi="निःशुल्क पायलट आरंभ करें">Start a no-risk pilot</p>
+      <h2 class="lead-h ondark reveal" data-hi="समस्या आप चुनिए। जोखिम हम उठाएँगे।">You choose the problem. We carry the risk.</h2>
+      <p class="contact-sub reveal" data-hi="हमें बताइए कि आपके अधिकारी किस प्रक्रिया में कठिनाई झेल रहे हैं। हम आपके विभाग की वास्तविक कार्यप्रणाली के अनुसार समाधान तैयार करेंगे — और जब तक वह उपयोग में न आए, आप पर कोई लागत नहीं।">
         Tell us the process your officers are struggling with. We will design an instrument built
         around how your department actually works — and there is no cost to you until it is in use.
       </p>
-      <button class="btn btn-gold open-modal-btn reveal">Describe a problem you're accountable for</button>
-      <p class="contact-alt reveal">or write to us at <a href="mailto:contact@rethinkables.in">contact@rethinkables.in</a></p>
+      <button class="btn btn-gold open-modal-btn reveal" data-hi="अपने विभाग की समस्या बताइए">Describe a problem you're accountable for</button>
+      <p class="contact-alt reveal" data-hi="या हमें लिखिए <a href='mailto:contact@rethinkables.in'>contact@rethinkables.in</a>">or write to us at <a href="mailto:contact@rethinkables.in">contact@rethinkables.in</a></p>
     </div>
   </section>
 
@@ -242,7 +245,7 @@
         </svg>
         <span>Rethinkables Technology Private Limited</span>
       </div>
-      <p class="footer-meta">Registered in Uttar Pradesh, India · Recognised by Startup India (DPIIT)</p>
+      <p class="footer-meta" data-hi="उत्तर प्रदेश, भारत में पंजीकृत · स्टार्टअप इंडिया (DPIIT) से मान्यता प्राप्त">Registered in Uttar Pradesh, India · Recognised by Startup India (DPIIT)</p>
     </div>
   </footer>
 
@@ -250,9 +253,9 @@
   <div id="solutionModal" class="modal-overlay" aria-hidden="true">
     <div class="modal-card">
       <button id="modalCloseBtn" class="modal-close" aria-label="Close">&times;</button>
-      <p class="eyebrow">Start a no-risk pilot</p>
-      <h3 class="modal-h">Describe a problem you're accountable for</h3>
-      <p class="modal-sub">
+      <p class="eyebrow" data-hi="निःशुल्क पायलट आरंभ करें">Start a no-risk pilot</p>
+      <h3 class="modal-h" data-hi="अपने विभाग की समस्या बताइए">Describe a problem you're accountable for</h3>
+      <p class="modal-sub" data-hi="ज़मीनी समस्या को आपसे बेहतर कोई नहीं समझता। बताइए कि आपके अधिकारी किस स्थिति से जूझ रहे हैं — हम उसी के अनुसार समाधान तैयार करेंगे, और उपयोग आरंभ होने तक आप पर कोई लागत नहीं।">
         You understand the problem on the ground better than anyone. Tell us what your officers are
         dealing with, and we will design an instrument built around how your department actually
         works — at no cost to you until it is in use.
@@ -260,7 +263,7 @@
 
       <form id="govForm">
         <div class="form-group">
-          <label for="challenge_category">Which department?</label>
+          <label for="challenge_category" data-hi="कौन सा विभाग?">Which department?</label>
           <select id="challenge_category" required>
             <option value="">Select department</option>
             <option value="School Education">School Education</option>
@@ -276,43 +279,44 @@
         </div>
 
         <div class="form-group" id="other_sector_wrapper" style="display:none;">
-          <label for="other_sector_input">Which department?</label>
+          <label for="other_sector_input" data-hi="कौन सा विभाग?">Which department?</label>
           <input type="text" id="other_sector_input" placeholder="Name the department" />
         </div>
 
         <div class="form-group">
-          <label for="problem">What breaks today?</label>
+          <label for="problem" data-hi="आज क्या काम नहीं कर रहा?">What breaks today?</label>
           <textarea id="problem" rows="3" required placeholder="Describe the conditions in the field, the tracking that fails, or the records that cannot be trusted."></textarea>
         </div>
 
         <div class="form-grid">
           <div class="form-group">
-            <label for="officer_name">Your name &amp; designation</label>
+            <label for="officer_name" data-hi="आपका नाम एवं पदनाम">Your name &amp; designation</label>
             <input type="text" id="officer_name" required placeholder="e.g. District Magistrate" />
           </div>
           <div class="form-group">
-            <label for="department">Office</label>
+            <label for="department" data-hi="कार्यालय">Office</label>
             <input type="text" id="department" required placeholder="e.g. Office of the DM" />
           </div>
         </div>
 
         <div class="form-grid">
           <div class="form-group">
-            <label for="division">District / State / Country</label>
+            <label for="division" data-hi="जनपद / राज्य / देश">District / State / Country</label>
             <input type="text" id="division" required placeholder="e.g. Uttar Pradesh, India" />
           </div>
           <div class="form-group">
-            <label for="contact_info">Email or phone</label>
+            <label for="contact_info" data-hi="ईमेल अथवा दूरभाष">Email or phone</label>
             <input type="text" id="contact_info" required placeholder="officer@gov.in / +91..." />
           </div>
         </div>
 
-        <button type="submit" id="submitBtn" class="btn btn-solid btn-full">Send to Rethinkables</button>
+        <button type="submit" id="submitBtn" class="btn btn-solid btn-full" data-hi="Rethinkables को भेजें">Send to Rethinkables</button>
       </form>
     </div>
   </div>
 
   <script src="field.js"></script>
   <script src="main.js"></script>
+  <script src="i18n.js"></script>
 </body>
 </html>
