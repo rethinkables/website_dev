@@ -390,3 +390,79 @@ body{
   .pilot-grid{grid-template-columns:1fr;gap:1rem}
   .faq-list{grid-template-columns:1fr;gap:1.6rem}
 }
+
+/* =========================================================================
+   LANGUAGE TOGGLE + DEVANAGARI
+   Devanagari needs its own faces and more vertical room, or the matras
+   collide with the line above. Applied only when Hindi is active.
+   ========================================================================= */
+.lang-toggle{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:3px;overflow:hidden;margin-left:.9rem;flex:none}
+.lang-btn{
+  font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.04em;
+  padding:.42rem .62rem;background:transparent;border:none;cursor:pointer;
+  color:var(--ink-soft);transition:background .18s,color .18s;line-height:1;
+}
+.lang-btn + .lang-btn{border-left:1px solid var(--line)}
+.lang-btn:hover{color:var(--green)}
+.lang-btn.is-on{background:var(--green);color:var(--paper)}
+.lang-btn[data-lang="hi"]{font-family:'Noto Sans Devanagari',var(--mono);font-size:.8rem}
+
+/* ---- Devanagari type stack, only when Hindi is on ---- */
+body.lang-hi{
+  font-family:'Noto Sans Devanagari','Mukta',var(--sans);
+  line-height:1.85;
+}
+body.lang-hi .hero-h,
+body.lang-hi .lead-h,
+body.lang-hi .prod-h,
+body.lang-hi h2,
+body.lang-hi h3,
+body.lang-hi .modal-h{
+  font-family:'Noto Serif Devanagari','Newsreader',var(--serif);
+  line-height:1.5;
+  letter-spacing:0;              /* tight tracking breaks Devanagari */
+}
+body.lang-hi .hero-h{font-size:clamp(1.9rem,4.4vw,3.4rem)}
+body.lang-hi .lead-h{font-size:clamp(1.6rem,3vw,2.4rem)}
+body.lang-hi .prod-h{font-size:clamp(2.2rem,5vw,3.6rem)}
+body.lang-hi .serif-em{font-style:normal;font-weight:600}   /* Devanagari has no true italic */
+body.lang-hi .prose p,
+body.lang-hi .hero-sub,
+body.lang-hi .fi-body,
+body.lang-hi .prod-lede,
+body.lang-hi .contact-sub{line-height:1.9}
+body.lang-hi .prose .prose-close,
+body.lang-hi .pilot-close,
+body.lang-hi .platform-note,
+body.lang-hi .dash-foot{font-style:normal;font-weight:500}
+body.lang-hi .eyebrow,
+body.lang-hi .kicker,
+body.lang-hi .pc-h,
+body.lang-hi .ex-tag,
+body.lang-hi .fi-badge,
+body.lang-hi .dash-tag,
+body.lang-hi .form-group label{
+  font-family:'Noto Sans Devanagari',var(--mono);letter-spacing:.04em;
+}
+body.lang-hi .step-n,
+body.lang-hi .mstep-n{font-family:var(--mono)}   /* keep numerals in mono */
+
+@media (max-width:560px){
+  .lang-toggle{margin-left:.5rem}
+  .lang-btn{padding:.38rem .5rem;font-size:.68rem}
+}
+
+/* ---- protection icons ---- */
+.p-ico{display:block;width:26px;height:26px;color:var(--gold);margin-bottom:.7rem}
+.p-ico svg{width:100%;height:100%;display:block}
+
+/* ---- product imagery ---- */
+.fi-shot{margin:0;display:flex;flex-direction:column;align-items:center;gap:.7rem}
+.fi-shot img{width:100%;max-width:300px;height:auto;display:block;
+  filter:drop-shadow(0 22px 44px rgba(20,26,23,.20))}
+.fi-shot figcaption{font-family:var(--mono);font-size:.68rem;letter-spacing:.05em;color:var(--ink-soft);text-transform:uppercase}
+.dash-img{width:100%;height:auto;display:block;border-radius:6px;
+  box-shadow:0 24px 56px rgba(0,0,0,.30);border:1px solid rgba(244,241,232,.14)}
+.dash-cap{display:flex;flex-direction:column;gap:.5rem;align-items:flex-start;margin-bottom:1rem;
+  font-family:var(--mono);font-size:.8rem;color:rgba(244,241,232,.72)}
+@media (max-width:880px){ .fi-shot img{max-width:250px} }
